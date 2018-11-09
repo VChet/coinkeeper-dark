@@ -1,0 +1,193 @@
+/* ==UserStyle==
+@name        Coinkeeper Dark
+@description Dark theme for coinkeeper.me
+@namespace   Coinkeeper Dark
+@version     0.1.0
+@author      VChet
+@license     CC-BY-SA-4.0
+@advanced dropdown border-radius "Reduce icon rounding" {
+  No "No" <<<EOT
+  EOT;
+  Yes "Yes" <<<EOT
+  .ck-card-item_icon, .ck-category__icon-wrapper{border-radius:10%!important} EOT;
+}
+==/UserStyle== */
+@-moz-document domain("coinkeeper.me") {
+  /*! Coinkeeper Dark */
+  /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
+  /*[[border-radius]]*/
+  :root {
+    --gray-dark: #222222;
+    --gray: #272727;
+    --gray-light: #303030;
+    --text: #959595;
+    --light: #AAAAAA;
+  }
+  .SelectBox .Select-control,
+  body {
+    background: none !important;
+  }
+  .ck-calendar-days__item--active,
+  .ck-calendar-days__item:hover,
+  .ck-calendar,
+  .ck-tariff__label-text {
+    color: var(--gray-dark) !important;
+  }
+  .ck-add-transaction,
+  .ck-category-block__header,
+  .ck-day-slice__balance .ck-day-slice__footer-value,
+  .ck-day-slice__date,
+  .ck-dropdown-list__item,
+  .ck-footer_copy,
+  .ck-header_profile,
+  .ck-transaction__tags-wrapper,
+  .Dropdown-option,
+  .Legend .LegendBody__row .middle-item,
+  .Legend .LegendBody__row.total .item,
+  .Popup,
+  .Settings .block,
+  .Settings__header-title,
+  body {
+    color: var(--text) !important;
+  }
+  .ck-category__title,
+  .ck-dropdown-list__item--highlight,
+  .ck-dropdown-list__item:hover,
+  .ck-tariff,
+  .ck-transaction__comment,
+  .ck-transaction__destination,
+  .dateSubtitleHTML__DIV,
+  .Dropdown .Dropdown-option:hover,
+  .Dropdown .Dropdown-option.is-selected,
+  .Dropdown .Dropdown-placeholder,
+  .Settings .color-dark .Select-input>input,
+  .Settings .color-dark .Select-value-label,
+  .Settings .color-dark,
+  .TagsInput__Body .Select-placeholder,
+  .tickHTML__DIV,
+  .Title:not(.Settings__premium-button-title) {
+    color: var(--light) !important;
+  }
+  .ck-category-block__header,
+  .ck-day-slice__footer,
+  .ck-fade,
+  .ck-footer_container,
+  .ck-header,
+  .ck-tariff__price-selector-list,
+  .Datepicker_development__backgroundOverlay,
+  .Datepicker_production__backgroundOverlay,
+  .Legend .LegendBody__row.total,
+  .Spinner,
+  .Title:not(.Settings__premium-button-title) {
+    background-color: var(--gray-dark) !important;
+  }
+  .ck-popup-message,
+  .Popup {
+    background-color: rgb(34, 34, 34, 0.8) !important;
+  }
+  .areaChart,
+  .Card,
+  .ck-add-transaction,
+  .ck-calendar-days,
+  .ck-category-block__body,
+  .ck-category-block__trigger,
+  .ck-dropdown-list__item--highlight,
+  .ck-dropdown-list__item:hover,
+  .ck-transaction__body,
+  .ck-upsale,
+  .curveChart,
+  .Dropdown .Dropdown-option:hover,
+  .Dropdown .Dropdown-option.is-selected,
+  .FiltersAndControls,
+  .Legend,
+  .pieChart {
+    background-color: var(--gray) !important;
+  }
+  .ck-category__icon_plus:after,
+  .ck-category__icon_plus:before,
+  .ck-dropdown__list,
+  .ck-header_dropdown-menu,
+  .Dropdown .Dropdown-menu,
+  .Legend .LegendHeader__selectItem:not(.empty),
+  .Select-control {
+    background-color: var(--gray-light) !important;
+  }
+  .Chart .stage .axis text,
+  .PasswordChange__nextPass-input,
+  .PasswordChange__prevPass-input,
+  .Select-control {
+    opacity: 1 !important;
+  }
+  .ck-fade,
+  .Datepicker_development__backgroundOverlay,
+  .Datepicker_production__backgroundOverlay {
+    opacity: 0.8 !important;
+  }
+  /* Borders */
+  .Chart,
+  .ck-category-block__header,
+  .ck-day-slice__footer,
+  .ck-transaction:not(:last-child),
+  .ck-upsale__tariff-item:last-child,
+  .Legend .LegendBody__row.total,
+  .Title {
+    border-color: var(--gray-dark) !important;
+  }
+  .ck-header_dropdown-menu-body,
+  .ck-header_dropdown-menu-header,
+  .Legend .LegendHeader__selectItem:not(.empty) {
+    border-color: var(--gray) !important;
+  }
+  .ck-bank-import__button,
+  .ck-category_add-category .ck-category__icon-wrapper,
+  .PasswordChange__prevPass,
+  .Settings .block {
+    border-color: var(--gray-light) !important;
+  }
+  /* Filters */
+  .ck-header_title,
+  .ck-page_background {
+    filter: invert(1) grayscale(1) !important;
+  }
+  .ck-transaction__calendar,
+  .ck-transaction__delete {
+    filter: brightness(50%) !important;
+  }
+  .UpsalePremium__header-close-button {
+    filter: brightness(250%) !important;
+  }
+  /* Chart */
+  .Chart .stage .base {
+    fill: var(--gray-dark) !important;
+  }
+  .Chart .stage rect {
+    fill: var(--gray-light) !important;
+  }
+  .Chart .pieChart .dateTitle,
+  .Chart .stage .axis text {
+    fill: var(--text) !important;
+  }
+  .Chart .stage .axis text.active,
+  .Chart .stage .label {
+    fill: var(--light) !important;
+  }
+  .Chart .pieChart .pie .background,
+  .Chart .stage .bkg,
+  .Chart .stage .circle {
+    fill: transparent !important;
+  }
+  .Chart .stage .axis--y line {
+    stroke: var(--gray) !important;
+  }
+  .ck-icon g path,
+  .ck-icon g rect {
+    stroke: var(--light) !important;
+  }
+  /* Scrollbars */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--gray-light) !important;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--gray) !important;
+  }
+}
