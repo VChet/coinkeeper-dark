@@ -40,6 +40,8 @@
   .ck-dropdown-list__item,
   .ck-footer_copy,
   .ck-header_profile,
+  .ck-landing__personal-data-block div,
+  .ck-landing__personal-data-block-text,
   .ck-transaction__tags-wrapper,
   .Dropdown-option,
   .Legend .LegendBody__row .middle-item,
@@ -50,12 +52,14 @@
   body {
     color: var(--text) !important;
   }
+  .ck-button:not(.ck-button_color_rouge),
   .ck-category__title,
   .ck-dropdown-list__item--highlight,
   .ck-dropdown-list__item:hover,
   .ck-header_link,
+  .ck-landing__footer-link:hover,
+  .ck-landing__footer-title-link,
   .ck-tariff,
-  .ck-button,
   .ck-title,
   .ck-transaction__comment,
   .ck-transaction__destination,
@@ -72,10 +76,12 @@
     color: var(--light) !important;
   }
   .ck-category-block__header,
+  .ck-container__landing,
   .ck-day-slice__footer,
   .ck-fade,
   .ck-footer_container,
   .ck-header,
+  .ck-landing__footer_bg_gray,
   .ck-tariff__price-selector-list,
   .Datepicker_development__backgroundOverlay,
   .Datepicker_production__backgroundOverlay,
@@ -96,6 +102,7 @@
   .ck-category-block__trigger,
   .ck-dropdown-list__item--highlight,
   .ck-dropdown-list__item:hover,
+  .ck-landing__personal-data-block,
   .ck-transaction__body,
   .ck-upsale,
   .curveChart,
