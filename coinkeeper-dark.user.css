@@ -54,6 +54,9 @@
   body {
     color: var(--text) !important;
   }
+  .ck-transaction__amount {
+    color: var(--text);
+  }
   .ck-button:not(.ck-button_color_rouge),
   .ck-category__title,
   .ck-dropdown-list__item--highlight,
