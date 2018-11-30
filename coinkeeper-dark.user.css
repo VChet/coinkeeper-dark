@@ -30,7 +30,9 @@
   .ck-calendar-days__item--active,
   .ck-calendar-days__item:hover,
   .ck-calendar,
-  .ck-tariff__label-text {
+  .ck-tariff__button.ck-button.ck-button_color_foliage.ck-button_size_xl,
+  .ck-tariff__label-text,
+  section.Title.Settings__premium-button-title {
     color: var(--gray-dark) !important;
   }
   .ck-add-transaction,
