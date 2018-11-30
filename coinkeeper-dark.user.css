@@ -95,6 +95,7 @@
   .Datepicker_development__backgroundOverlay,
   .Datepicker_production__backgroundOverlay,
   .Legend .LegendBody__row.total,
+  .Legend .LegendBody__separator,
   .Spinner,
   .Title:not(.Settings__premium-button-title) {
     background-color: var(--gray-dark) !important;
