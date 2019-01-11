@@ -23,10 +23,8 @@
     --text: #959595;
     --light: #AAAAAA;
   }
+  /* Color */
   .SelectBox .Select-control,
-  body {
-    background: none !important;
-  }
   .ck-calendar-days__item--active,
   .ck-calendar-days__item:hover,
   .ck-calendar,
@@ -76,13 +74,17 @@
   .Dropdown .Dropdown-option:hover,
   .Dropdown .Dropdown-option.is-selected,
   .Dropdown .Dropdown-placeholder,
-  .Settings .color-dark .Select-input>input,
+  .Settings .color-dark .Select-input > input,
   .Settings .color-dark .Select-value-label,
   .Settings .color-dark,
   .TagsInput__Body .Select-placeholder,
   .tickHTML__DIV,
   .Title:not(.Settings__premium-button-title) {
     color: var(--light) !important;
+  }
+  /* Background */
+  body {
+    background: none !important;
   }
   .ck-category-block__header,
   .ck-container__landing,
