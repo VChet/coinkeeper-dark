@@ -102,10 +102,6 @@
   .Title:not(.Settings__premium-button-title) {
     background-color: var(--gray-dark) !important;
   }
-  .ck-popup-message,
-  .Popup {
-    background-color: rgb(34, 34, 34, 0.8) !important;
-  }
   .areaChart,
   .Card,
   .ck-add-transaction,
@@ -137,6 +133,11 @@
   .Select-control {
     background-color: var(--gray-light) !important;
   }
+  .ck-popup-message,
+  .Popup {
+    background-color: rgb(34, 34, 34, 0.8) !important;
+  }
+  /* Opacity */
   .Chart .stage .axis text,
   .PasswordChange__nextPass-input,
   .PasswordChange__prevPass-input,
