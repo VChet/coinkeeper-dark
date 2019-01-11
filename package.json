@@ -20,8 +20,8 @@
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-stylelint": "^8.0.0",
-    "stylelint": "^9.7.1",
+    "stylelint": "^9.9.0",
     "stylelint-config-standard": "^18.2.0",
-    "ver": "^3.0.0"
+    "ver": "^3.0.1"
   }
 }
