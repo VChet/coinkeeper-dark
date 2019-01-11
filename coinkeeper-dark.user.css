@@ -109,6 +109,7 @@
   .areaChart,
   .Card,
   .ck-add-transaction,
+  .ck-button_color_white,
   .ck-calendar-days,
   .ck-category-block__body,
   .ck-category-block__trigger,
@@ -125,6 +126,8 @@
   .pieChart {
     background-color: var(--gray) !important;
   }
+  .ck-button_color_white:focus,
+  .ck-button_color_white:hover,
   .ck-category__icon_plus:after,
   .ck-category__icon_plus:before,
   .ck-dropdown__list,
