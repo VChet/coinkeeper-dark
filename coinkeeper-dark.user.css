@@ -91,18 +91,23 @@
   body {
     background: none !important;
   }
-  .ck-category-block__header,
+  .ck-category-block__body,
+  .ck-category-block__trigger,
   .ck-container__landing,
-  .ck-day-slice__footer,
   .ck-fade,
   .ck-footer_container,
   .ck-header,
   .ck-landing__footer_bg_gray,
   .ck-tariff__price-selector-list,
+  .ck-transaction__body,
+  .ck-transaction__deleted-overlay,
+  .curveChart,
   .Datepicker_development__backgroundOverlay,
   .Datepicker_production__backgroundOverlay,
+  .FiltersAndControls,
   .Legend .LegendBody__row.total,
   .Legend .LegendBody__separator,
+  .Legend,
   .Spinner,
   .Title:not(.Settings__premium-button-title) {
     background-color: var(--gray-dark) !important;
@@ -112,18 +117,14 @@
   .ck-add-transaction,
   .ck-button_color_white,
   .ck-calendar-days,
-  .ck-category-block__body,
-  .ck-category-block__trigger,
+  .ck-category-block__header,
+  .ck-day-slice__footer,
   .ck-dropdown-list__item--highlight,
   .ck-dropdown-list__item:hover,
   .ck-landing__personal-data-block,
-  .ck-transaction__body,
   .ck-upsale,
-  .curveChart,
   .Dropdown .Dropdown-option:hover,
   .Dropdown .Dropdown-option.is-selected,
-  .FiltersAndControls,
-  .Legend,
   .pieChart {
     background-color: var(--gray) !important;
   }
@@ -157,15 +158,15 @@
   /* Borders */
   .Chart,
   .ck-category-block__header,
-  .ck-day-slice__footer,
-  .ck-transaction:not(:last-child),
   .ck-upsale__tariff-item:last-child,
   .Legend .LegendBody__row.total,
   .Title {
     border-color: var(--gray-dark) !important;
   }
+  .ck-day-slice__footer,
   .ck-header_dropdown-menu-body,
   .ck-header_dropdown-menu-header,
+  .ck-transaction:not(:last-child),
   .Legend .LegendHeader__selectItem:not(.empty) {
     border-color: var(--gray) !important;
   }
@@ -189,7 +190,7 @@
   }
   /* Chart */
   .Chart .stage .base {
-    fill: var(--gray-dark) !important;
+    fill: var(--gray) !important;
   }
   .Chart .stage rect {
     fill: var(--gray-light) !important;
