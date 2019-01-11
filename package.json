@@ -4,6 +4,19 @@
   "description": "Dark theme for coinkeeper.me",
   "author": "VChet",
   "license": "CC-BY-SA-4.0",
+  "homepage": "https://github.com/VChet/Coinkeeper-Vanilla-Dark#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VChet/Coinkeeper-Vanilla-Dark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VChet/Coinkeeper-Vanilla-Dark/issues"
+  },
+  "scripts": {
+    "patch": "gulp lint && npx ver patch -p coinkeeper-dark.user.css",
+    "minor": "gulp lint && npx ver minor -p coinkeeper-dark.user.css",
+    "major": "gulp lint && npx ver major -p coinkeeper-dark.user.css"
+  },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-stylelint": "^8.0.0",
