@@ -179,6 +179,9 @@
   .Settings .block {
     border-color: var(--gray-light) !important;
   }
+  .ck-day-slice__footer {
+    border-radius: 0 !important;
+  }
   /* Filters */
   .ck-header_title,
   .ck-page_background {
