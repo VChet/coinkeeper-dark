@@ -54,6 +54,7 @@
   .Popup,
   .Settings .block,
   .Settings__header-title,
+  #onesignal-popover-container #onesignal-popover-dialog .popover-body-message,
   body {
     color: var(--text) !important;
   }
@@ -125,7 +126,9 @@
   .ck-upsale,
   .Dropdown .Dropdown-option:hover,
   .Dropdown .Dropdown-option.is-selected,
-  .pieChart {
+  .pieChart,
+  #onesignal-popover-container #onesignal-popover-dialog .popover-button.secondary,
+  #onesignal-popover-container #onesignal-popover-dialog {
     background-color: var(--gray) !important;
   }
   .ck-button_color_white:focus,
