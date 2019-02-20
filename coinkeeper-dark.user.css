@@ -183,8 +183,10 @@
     border-radius: 0 !important;
   }
   /* Filters */
+  .ck-category__icon,
   .ck-header_title,
-  .ck-page_background {
+  .ck-page_background,
+  [class^="ck-card-item_icon--"] {
     filter: invert(1) grayscale(1) !important;
   }
   .ck-transaction__calendar,
