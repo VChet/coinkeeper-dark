@@ -1,10 +1,10 @@
 <p align="center">
   <img alt="logo" src="./images/logo.png" width="580">
   <br>
-  <a href="https://github.com/VChet/Coinkeeper-Vanilla-Dark/tags">
-    <img src="https://img.shields.io/github/tag/VChet/Coinkeeper-Vanilla-Dark.svg?label=version" alt="Version">
+  <a href="https://github.com/VChet/Coinkeeper-Dark/tags">
+    <img src="https://img.shields.io/github/tag/VChet/Coinkeeper-Dark.svg?label=version" alt="Version">
   </a>
-  <a href="https://david-dm.org/VChet/Coinkeeper-Vanilla-Dark?type=dev">
+  <a href="https://david-dm.org/VChet/Coinkeeper-Dark?type=dev">
     <img src="https://img.shields.io/david/dev/StylishThemes/GitHub-Dark.svg?label=devDependencies" alt="devDependencies">
   </a>
   <a href="http://makeapullrequest.com">
@@ -26,13 +26,13 @@
 
 1. Install the style using one of these methods:<br>
    * [Install from userstyles.org](https://userstyles.org/styles/165830)
-   * [Install directly with Stylus](https://github.com/VChet/Coinkeeper-Vanilla-Dark/raw/master/coinkeeper-dark.user.css)
+   * [Install directly with Stylus](https://github.com/VChet/Coinkeeper-Dark/raw/master/coinkeeper-dark.user.css)
 
 ## Contribute
-Anyone and everyone is welcome to [contribute](https://github.com/VChet/Coinkeeper-Vanilla-Dark/pulls), report any [issues](https://github.com/VChet/Coinkeeper-Vanilla-Dark/issues) or just [say thanks](https://saythanks.io/to/VChet).
+Anyone and everyone is welcome to [contribute](https://github.com/VChet/Coinkeeper-Dark/pulls), report any [issues](https://github.com/VChet/Coinkeeper-Dark/issues) or just [say thanks](https://saythanks.io/to/VChet).
 
 ## Development
-1. [Fork](https://github.com/VChet/Coinkeeper-Vanilla-Dark/fork) and download this repository.
+1. [Fork](https://github.com/VChet/Coinkeeper-Dark/fork) and download this repository.
 1. Install [Node.js](https://nodejs.org/).
 1. Install all dependencies using `npm install`.
 1. Install gulp-cli using `npm install -g gulp-cli`.
