@@ -217,7 +217,7 @@
     fill: transparent !important;
   }
   .Chart .stage .axis--y line {
-    stroke: var(--gray) !important;
+    stroke: var(--gray-dark) !important;
   }
   .ck-icon g path,
   .ck-icon g rect {
