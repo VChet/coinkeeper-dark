@@ -18,10 +18,10 @@
     "major": "gulp lint && npx ver major coinkeeper-dark.user.css"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-stylelint": "^8.0.0",
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0",
-    "ver": "^4.0.1"
+    "gulp": "^4.0.2",
+    "gulp-stylelint": "^9.0.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "ver": "^4.3.0"
   }
 }
