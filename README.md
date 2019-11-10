@@ -10,9 +10,6 @@
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
   </a>
-  <a href="https://saythanks.io/to/VChet">
-    <img src="https://img.shields.io/badge/say-thanks-B9B384.svg" alt="say thanks">
-  </a>
 </p>
 
 ## Preview
@@ -29,7 +26,7 @@
    * [Install directly with Stylus](https://github.com/VChet/Coinkeeper-Dark/raw/master/coinkeeper-dark.user.css)
 
 ## Contribute
-Anyone and everyone is welcome to [contribute](https://github.com/VChet/Coinkeeper-Dark/pulls), report any [issues](https://github.com/VChet/Coinkeeper-Dark/issues) or just [say thanks](https://saythanks.io/to/VChet).
+Anyone and everyone is welcome to [contribute](https://github.com/VChet/Coinkeeper-Dark/pulls) and report any [issues](https://github.com/VChet/Coinkeeper-Dark/issues).
 
 ## Development
 1. [Fork](https://github.com/VChet/Coinkeeper-Dark/fork) and download this repository.
