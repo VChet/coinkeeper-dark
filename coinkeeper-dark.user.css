@@ -26,208 +26,308 @@
     --text: #959595;
     --light: #AAAAAA;
   }
-  /* Color */
-  .SelectBox .Select-control,
-  .ck-calendar-days__item--active,
-  .ck-calendar-days__item:hover,
-  .ck-calendar,
-  .ck-tariff__button.ck-button.ck-button_color_foliage.ck-button_size_xl,
-  .ck-tariff__label-text,
-  section.Title.Settings__premium-button-title {
-    color: var(--gray-dark) !important;
-  }
-  .ck-add-transaction,
-  .ck-category-block__header,
-  .ck-day-slice__balance .ck-day-slice__footer-value,
-  .ck-day-slice__date,
-  .ck-dropdown-list__item,
-  .ck-footer_copy,
-  .ck-header_profile,
-  .ck-landing__personal-data-block div,
-  .ck-landing__personal-data-block-text,
-  .ck-transaction__debt-data,
-  .ck-transaction__source,
-  .ck-transaction__tags-wrapper,
-  .Dropdown-option,
-  .Legend .LegendBody__row .middle-item,
-  .Legend .LegendBody__row.total .item,
-  .Popup,
-  .Settings .block,
-  .Settings__header-title,
-  #onesignal-popover-container #onesignal-popover-dialog .popover-body-message,
-  body {
-    color: var(--text) !important;
-  }
-  .ck-transaction__amount {
-    color: var(--text);
-  }
-  .ck-add-transaction input,
-  .ck-button:not(.ck-button_color_rouge),
-  .ck-category__title,
-  .ck-dropdown-list__item--highlight,
-  .ck-dropdown-list__item:hover,
-  .ck-header_link,
-  .ck-landing__footer-link:hover,
-  .ck-landing__footer-title-link,
-  .ck-tariff,
-  .ck-title,
-  .ck-transaction__comment,
-  .ck-transaction__debt-data:hover,
-  .ck-transaction__deleted-text,
-  .ck-transaction__destination,
-  .ck-transaction__restore,
-  .dateSubtitleHTML__DIV,
-  .Dropdown .Dropdown-option:hover,
-  .Dropdown .Dropdown-option.is-selected,
-  .Dropdown .Dropdown-placeholder,
-  .Settings .color-dark .Select-input > input,
-  .Settings .color-dark .Select-value-label,
-  .Settings .color-dark,
-  .TagsInput__Body .Select-placeholder,
-  .tickHTML__DIV,
-  .Title:not(.Settings__premium-button-title) {
-    color: var(--light) !important;
-  }
-  /* Background */
-  body {
-    background: none !important;
-  }
-  .ck-category-block__body,
-  .ck-category-block__trigger,
-  .ck-container__landing,
-  .ck-fade,
-  .ck-footer_container,
-  .ck-header,
-  .ck-landing__footer_bg_gray,
-  .ck-tariff__price-selector-list,
-  .ck-transaction__body,
-  .ck-transaction__deleted-overlay,
-  .curveChart,
-  .Datepicker_development__backgroundOverlay,
-  .Datepicker_production__backgroundOverlay,
-  .FiltersAndControls,
-  .Legend .LegendBody__row.total,
-  .Legend .LegendBody__separator,
-  .Legend,
-  .Spinner,
-  .Title:not(.Settings__premium-button-title) {
-    background-color: var(--gray-dark) !important;
-  }
-  .areaChart,
-  .Card,
-  .ck-add-transaction,
-  .ck-button_color_white,
-  .ck-calendar-days,
-  .ck-category-block__header,
-  .ck-day-slice__footer,
-  .ck-dropdown-list__item--highlight,
-  .ck-dropdown-list__item:hover,
-  .ck-landing__personal-data-block,
-  .ck-upsale,
-  .Dropdown .Dropdown-option:hover,
-  .Dropdown .Dropdown-option.is-selected,
-  .pieChart,
-  #onesignal-popover-container #onesignal-popover-dialog .popover-button.secondary,
-  #onesignal-popover-container #onesignal-popover-dialog {
-    background-color: var(--gray) !important;
-  }
-  .ck-button_color_white:focus,
-  .ck-button_color_white:hover,
-  .ck-category__icon_plus:after,
-  .ck-category__icon_plus:before,
-  .ck-dropdown__list,
-  .ck-header_dropdown-menu,
-  .Dropdown .Dropdown-menu,
-  .Legend .LegendHeader__selectItem:not(.empty),
-  .Select-control {
-    background-color: var(--gray-light) !important;
-  }
-  .ck-popup-message,
-  .Popup {
-    background-color: rgb(34, 34, 34, 0.8) !important;
-  }
-  /* Opacity */
-  .Chart .stage .axis text,
-  .PasswordChange__nextPass-input,
-  .PasswordChange__prevPass-input,
-  .Select-control {
-    opacity: 1 !important;
-  }
-  .ck-fade,
-  .Datepicker_development__backgroundOverlay,
-  .Datepicker_production__backgroundOverlay {
-    opacity: 0.8 !important;
-  }
-  /* Borders */
-  .Chart,
-  .ck-category-block__header,
-  .ck-upsale__tariff-item:last-child,
-  .Legend .LegendBody__row.total,
-  .Title {
-    border-color: var(--gray-dark) !important;
-  }
-  .ck-day-slice__footer,
-  .ck-header_dropdown-menu-body,
-  .ck-header_dropdown-menu-header,
-  .ck-transaction:not(:last-child),
-  .Legend .LegendHeader__selectItem:not(.empty) {
-    border-color: var(--gray) !important;
-  }
-  .ck-bank-import__button,
-  .ck-category_add-category .ck-category__icon-wrapper,
-  .PasswordChange__prevPass,
-  .Settings .block {
-    border-color: var(--gray-light) !important;
-  }
-  .ck-day-slice__footer {
-    border-radius: 0 !important;
-  }
   /* Filters */
   .ck-category__icon,
   .ck-header_title,
   .ck-page_background,
   [class^="ck-card-item_icon--"] {
-    filter: invert(1) grayscale(1) !important;
+    filter: invert(1) grayscale(1);
   }
   .ck-transaction__calendar,
   .ck-transaction__delete {
-    filter: brightness(50%) !important;
+    filter: brightness(50%);
   }
-  .UpsalePremium__header-close-button {
-    filter: brightness(250%) !important;
+  /* Main input */
+  .ck-add-transaction {
+    background-color: var(--gray-dark);
+    color: var(--text);
   }
-  /* Chart */
-  .Chart .stage .base {
-    fill: var(--gray) !important;
-  }
-  .Chart .stage rect {
-    fill: var(--gray-light) !important;
-  }
-  .Chart .pieChart .dateTitle,
-  .Chart .stage .axis text {
-    fill: var(--text) !important;
-  }
-  .Chart .stage .axis text.active,
-  .Chart .stage .label {
-    fill: var(--light) !important;
-  }
-  .Chart .pieChart .pie .background,
-  .Chart .stage .bkg,
-  .Chart .stage .circle {
-    fill: transparent !important;
-  }
-  .Chart .stage .axis--y line {
-    stroke: var(--gray-dark) !important;
-  }
-  .ck-icon g path,
-  .ck-icon g rect {
-    stroke: var(--light) !important;
+  .ck-add-transaction input {
+    color: var(--text);
   }
   /* Scrollbars */
   ::-webkit-scrollbar-thumb {
-    background-color: var(--gray-light) !important;
+    background-color: var(--gray-dark) !important;
   }
   ::-webkit-scrollbar-track {
-    background-color: var(--gray) !important;
+    background-color: var(--gray-light) !important;
   }
+  /* Background blur with active modal */
+  .ck-popup-message,
+  .ck-fade {
+    background-color: rgba(34, 34, 34, 0.8);
+  }
+  /* END Filters */
+  /* Components */
+  .Card,
+  .TagsInput__Body .Select-control {
+    background-color: var(--gray-dark);
+  }
+  .TagsInput__Body .Select-control:hover {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+  /* Chart */
+  .Chart {
+    border-color: var(--gray);
+  }
+  .Select-input input {
+    color: var(--text);
+  }
+  .FiltersAndControls .Level2__Chart.AreaTypeChartButton,
+  .FiltersAndControls .Level2__Chart.DonutTypeChartButton,
+  .FiltersAndControls .Level2__DatepickerButton {
+    filter: brightness(50%);
+  }
+  .Datepicker_development__backgroundOverlay, .Datepicker_production__backgroundOverlay {
+    background-color: rgba(34, 34, 34, 0.8);
+  }
+  .Dropdown .Dropdown-placeholder,
+  .TagsInput__Body .Select-placeholder {
+    color: var(--light);
+  }
+  .Chart .stage .base {
+    fill: var(--gray);
+  }
+  .Chart .stage .axis--y line {
+    stroke: var(--gray);
+  }
+  .Chart .stage .axis .tickHTML .tickHTML__DIV {
+    color: var(--light);
+  }
+  .Chart .stage .axis text {
+    fill: var(--text);
+    opacity: 1;
+  }
+  .Chart .stage .axis text.active {
+    fill: var(--light);
+  }
+  .Chart .stage .zoomIn .label,
+  .Chart .stage .zoomOut .label {
+    fill: var(--text);
+  }
+  .Chart .stage .zoomIn .circle,
+  .Chart .stage .zoomOut .circle {
+    fill: rgba(255, 255, 255, 0.1);
+  }
+  .Chart .stage .cutoff-curve,
+  .Chart .stage .cutoff-area {
+    fill: var(--gray-light);
+  }
+  .Legend .LegendHeader__selectItem:not(.empty) {
+    background-color: var(--gray-dark);
+    border-color: var(--gray);
+  }
+  .Legend .LegendBody__row .middle-item {
+    color: var(--text);
+  }
+  .Legend .LegendBody__row.total {
+    background-color: var(--gray);
+    border-color: var(--gray-light);
+  }
+  .Legend .LegendBody__row.total .item {
+    color: var(--text);
+  }
+  .Chart .pieChart .dateTitle {
+    fill: var(--text);
+  }
+  .Chart .pieChart .dateSubtitleHTML {
+    color: var(--light);
+  }
+  .Chart .tooltip {
+    background-color: var(--gray-dark);
+    box-shadow: 0px 2px 5px 0px var(--gray-light);
+  }
+  /* END Chart */
+  /* Options */
+  .Title {
+    color: var(--text);
+    background-color: var(--gray);
+    border-bottom-color: var(--gray);
+  }
+  .Settings .block {
+    color: var(--text);
+    background-color: var(--gray-dark);
+    border-bottom-color: var(--gray);
+  }
+  .SelectBox .Select--single > .Select-control .Select-value,
+  .SelectBox .Select-placeholder {
+    background-color: var(--gray-dark);
+  }
+  .Popup__Overlay {
+    background-color: rgba(34, 34, 34, 0.8);
+  }
+  .Row {
+    border-bottom-color: var(--gray);
+  }
+  .PasswordChange__prevPass-input,
+  .PasswordChange__prevPass-input::placeholder {
+    color: var(--text);
+  }
+  /* END Components */
+
+  /* begin remap-css rules */
+  /* remap-css rule for "background: #fff" */
+  .ck-bank-import__bank-account-item, .ck-bank-import__connect-account,
+  .ck-billing-form__card-input, .ck-billing-form__card-input-block,
+  .ck-billing-form__form-wrapper, .ck-button_color_white, .ck-landing__input,
+  .ck-page_background_landing, .ck-tariff__price-selector-list,
+  .picker__button--clear, .picker__button--close, .picker__button--today,
+  .picker__holder, html .ck-transaction__return-overlay {
+    background: var(--gray-dark);
+  }
+  /* remap-css rule for "background-color: #fff" */
+  .ck-calendar, .ck-dashboard-card, .ck-day-slice__body, .ck-dropdown,
+  .ck-footer, .ck-form-item_input, .ck-header_old,
+  .ck-header_profile .ck-header_dropdown-menu,
+  .ck-license-locker-category-tooltip, .ck-selectbox .ck-select_dropdown,
+  .ck-transaction {
+    background-color: var(--gray-dark);
+  }
+  .ck-dropdown ::-webkit-scrollbar-thumb,
+  .ck-selectbox .ck-select_dropdown::-webkit-scrollbar-thumb {
+    background-color: var(--gray-dark);
+  }
+  /* remap-css rule for "background-color: #fff !important" */
+  .ck-license-locker-dropdown-tags {
+    background-color: var(--gray-dark) !important;
+  }
+  /* remap-css rule for "background: #fbfbf9" */
+  .ck-bank-import__add-bank, .ck-bank-import__bank-login-head {
+    background: var(--gray-dark);
+  }
+  /* remap-css rule for "background-color: rgba(244,244,241,.4)" */
+  .ck-card-header, .ck-category-block__header, .ck-day-slice__footer,
+  .ck-trnsaction_item--footer {
+    background-color: var(--gray);
+  }
+  /* remap-css rule for "background-color: #989898" */
+  .ck-dropdown-list__item--highlight, .ck-dropdown-list__item:hover {
+    background-color: var(--gray);
+  }
+  /* remap-css rule for "background: #dedcdc" */
+  .ck-category__icon_plus::after, .ck-category__icon_plus::before {
+    background: var(--gray-light);
+  }
+  /* remap-css rule for "background-color: #dedcdc" */
+  .ck-card-item--new .ck-card-item_icon::after,
+  .ck-card-item--new .ck-card-item_icon::before {
+    background-color: var(--gray-light);
+  }
+  /* remap-css rule for "color: #000" */
+  .ck-selectbox select option, .ck-transaction__comment,
+  .ck-transaction__debt-data:hover,
+  .ck-transaction__debt-data:hover .ck-transaction__debt-data-input,
+  .ck-transaction__destination, .ck-transaction__destination-bank,
+  .ck-transaction_item-description, .ck-transaction_item-description input,
+  .ck-transaction_item-tag, .ck-transaction_item-tags .ck-dropdown,
+  .ck-transaction_item-title, .picker, .picker__button--clear:hover,
+  .picker__button--close:hover, .picker__button--today:hover {
+    color: var(--light);
+  }
+  .ck-transaction_item-description input:-moz-placeholder,
+  .ck-transaction_item-description input::-moz-placeholder {
+    color: var(--light);
+  }
+  .ck-transaction_item-description input::-webkit-input-placeholder {
+    color: var(--light);
+  }
+  .ck-transaction_item-description input:-ms-input-placeholder {
+    color: var(--light);
+  }
+  /* remap-css rule for "color: #333" */
+  .ck-header_link, .ck-header_new .ck-header__profile, .ck-header_profile {
+    color: var(--text);
+  }
+  /* remap-css rule for "color: #64635f" */
+  .card-tags-error-link, .ck-transaction__amount, .ck-transaction__amount-bank,
+  body {
+    color: var(--text);
+  }
+  /* remap-css rule for "color: #696868" */
+  .ck-day-slice__date {
+    color: var(--text);
+  }
+  /* remap-css rule for "color: #757575" */
+  .ck-bank-import__bank-account-slash, .ck-button_color_white,
+  .ck-dropdown-list__item span, .ck-landing__disclaimer_dark,
+  .ck-landing__disclaimer_dark .ck-landing__disclaimer-link,
+  .ck-landing__email-text, .ck-license-locker-category-tooltip-message,
+  .ck-tariff__advantages-comment, .ck-tariff__price-selector:hover::after {
+    color: var(--text);
+  }
+  /* remap-css rule for "color: #797878" */
+  .ck-card-header, .ck-category-block__header {
+    color: var(--text);
+  }
+  /* remap-css rule for "color: #7b7a7a" */
+  .ck-transaction__date, .ck-transaction__source, .ck-transaction__source-bank,
+  .ck-transaction_item--date, .ck-transaction_item-title--strong,
+  .ck-transaction_item-title--strong input {
+    color: var(--text);
+  }
+  /* remap-css rule for "color: rgba(0,0,0,.7)" */
+  .ck-transaction__tags-wrapper, .ck-transaction_item-tags {
+    color: var(--text);
+  }
+  /* remap-css rule for "color: #404040" */
+  .ck-btn__success_black-friday, .ck-button,
+  .ck-button_color_transparent:hover, .ck-button_color_yellow,
+  .ck-button_style_wired.ck-button_color_dark-gray, .ck-dropdown-list__item,
+  .ck-landing__body-container, .ck-landing__body-heading,
+  .ck-landing__features-tariff-button-label, .ck-landing__tagline,
+  .ck-license-locker-category-tooltip-count,
+  .ck-license-locker-category-tooltip-title,
+  .ck-license-locker-dropdown-tags span, .ck-tariff,
+  .ck-transaction__deleted-overlay, .ck-transaction_item--delete {
+    color: var(--light);
+  }
+  /* remap-css rule for "color: #4f4f4f" */
+  .ck-card-header_price, .ck-card-item_title, .ck-category__title,
+  .ck-day-slice__footer-value, .ck-transaction_header,
+  .ck-trnsaction_item--footer .ck-transaction_item-title {
+    color: var(--light);
+  }
+  /* remap-css rule for "border-top: 1px solid #e8e7e7" */
+  .ck-day-slice__footer, .ck-trnsaction_item--footer {
+    border-top-color: var(--gray);
+  }
+  /* remap-css rule for "border-bottom: 1px solid #e8e7e7" */
+  .ck-card-header, .ck-category-block__header {
+    border-bottom-color: var(--gray);
+  }
+  /* remap-css rule for "border-bottom: 1px solid #f3f2f2" */
+  .bank-incomplete-transaction, .bank-incomplete-transaction-duplicated {
+    border-bottom-color: var(--gray);
+  }
+  /* remap-css rule for "border-bottom: 2px solid #f3f2f2" */
+  .ck-bank-import__bank-account-item, .ck-bank-import__bank-login-head,
+  .ck-bank-import__connect-account, .ck-header_dropdown-menu-header,
+  .ck-header_profile .ck-header_dropdown-menu-body {
+    border-bottom-color: var(--gray);
+  }
+  /* remap-css rule for "border-bottom: 1px solid rgba(222,220,220,.8)" */
+  .ck-transaction:not(:last-child),
+  .ck-transaction_item-wrapper:not(:last-child),
+  .ck-transaction_item:not(:last-child) {
+    border-bottom-color: var(--gray);
+  }
+  /* remap-css rule for "border-top: 1px solid #dedcdc" */
+  .ck-form .ck-form-item:not(:first-child) {
+    border-top-color: var(--gray-light);
+  }
+  /* remap-css rule for "border-bottom: 1px solid #dedcdc" */
+  .ck-transaction_header {
+    border-bottom-color: var(--gray-light);
+  }
+  /* remap-css rule for "border: 2px solid #dedcdc" */
+  .ck-card-item--new .ck-card-item_icon,
+  .ck-category_add-category .ck-category__icon-wrapper {
+    border-color: var(--gray-light);
+  }
+  /* remap-css rule for "box-shadow: 2px 2px 9px rgba(0, 0, 0, .13)" */
+  .ck-dashboard-card, .ck-day-slice__body, .ck-form, .ck-header_logo,
+  .ck-header_profile .ck-header_dropdown-menu, .picker__day--highlighted {
+    box-shadow: none;
+  }
+  /* end remap-css rules */
 }
