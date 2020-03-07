@@ -13,7 +13,7 @@
 </p>
 
 ## Preview
-![](./images/screenshots/preview.png)
+![](./images/preview.png)
 
 ## Installation
 1. Install Stylus
