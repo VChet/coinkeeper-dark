@@ -13,9 +13,9 @@
     "url": "https://github.com/VChet/Coinkeeper-Dark/issues"
   },
   "scripts": {
-    "patch": "npm run lint && npx ver patch coinkeeper-dark.user.css",
-    "minor": "npm run lint && npx ver minor coinkeeper-dark.user.css",
-    "major": "npm run lint && npx ver major coinkeeper-dark.user.css",
+    "patch": "npm run lint && versions --all patch coinkeeper-dark.user.css",
+    "minor": "npm run lint && versions --all minor coinkeeper-dark.user.css",
+    "major": "npm run lint && versions --all major coinkeeper-dark.user.css",
     "generate": "node ./tools/generate.js",
     "lint": "stylelint **/*.css",
     "test": "npm run stylelint"
@@ -25,5 +25,6 @@
     "remap-css": "^2.1.1",
     "stylelint": "^13.2.0",
     "stylelint-config-standard": "^20.0.0",
+    "versions": "^8.2.1"
   }
 }
