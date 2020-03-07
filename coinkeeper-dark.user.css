@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     0.4.1
+@version     0.5.0
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -16,7 +16,7 @@
 }
 ==/UserStyle== */
 @-moz-document domain("coinkeeper.me") {
-  /*! Coinkeeper Dark 0.4.1 */
+  /*! Coinkeeper Dark 0.5.0 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
   /*[[border-radius]]*/
   :root {
