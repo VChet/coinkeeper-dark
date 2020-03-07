@@ -13,15 +13,13 @@
     "url": "https://github.com/VChet/Coinkeeper-Dark/issues"
   },
   "scripts": {
-    "patch": "gulp lint && npx ver patch coinkeeper-dark.user.css",
-    "minor": "gulp lint && npx ver minor coinkeeper-dark.user.css",
-    "major": "gulp lint && npx ver major coinkeeper-dark.user.css",
-    "stylelint": "stylelint *.css",
+    "patch": "npm run lint && npx ver patch coinkeeper-dark.user.css",
+    "minor": "npm run lint && npx ver minor coinkeeper-dark.user.css",
+    "major": "npm run lint && npx ver major coinkeeper-dark.user.css",
+    "lint": "stylelint **/*.css",
     "test": "npm run stylelint"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-stylelint": "^9.0.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
     "ver": "^4.3.0"
