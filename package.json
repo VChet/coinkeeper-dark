@@ -16,12 +16,14 @@
     "patch": "npm run lint && npx ver patch coinkeeper-dark.user.css",
     "minor": "npm run lint && npx ver minor coinkeeper-dark.user.css",
     "major": "npm run lint && npx ver major coinkeeper-dark.user.css",
+    "generate": "node ./tools/generate.js",
     "lint": "stylelint **/*.css",
     "test": "npm run stylelint"
   },
   "devDependencies": {
-    "stylelint": "^10.0.1",
-    "stylelint-config-standard": "^18.3.0",
-    "ver": "^4.3.0"
+    "fetch-css": "^1.0.2",
+    "remap-css": "^2.1.1",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0",
   }
 }
