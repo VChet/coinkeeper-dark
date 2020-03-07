@@ -3,7 +3,6 @@
     "rules": {
         "at-rule-empty-line-before": null,
         "block-no-empty": null,
-        "no-duplicate-selectors": null,
         "block-opening-brace-space-before": "always",
         "color-hex-case": "upper",
         "color-hex-length": "long",
@@ -19,13 +18,19 @@
         "font-family-no-duplicate-names": true,
         "function-url-quotes": "always",
         "indentation": 2,
+        "length-zero-no-unit": null,
         "no-descending-specificity": null,
+        "no-duplicate-selectors": null,
         "number-leading-zero": "always",
         "number-max-precision": 3,
         "number-no-trailing-zeros": true,
         "rule-empty-line-before": [
             "never",
-            ignore: ["after-comment"]
+            {
+                "ignore": [
+                    "after-comment"
+                ]
+            }
         ],
         "selector-combinator-space-after": "always",
         "selector-combinator-space-before": "always",
