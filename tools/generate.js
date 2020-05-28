@@ -56,8 +56,9 @@ const remapOpts = {
   ignoreSelectors,
   indentCss: 2,
   lineLength: 76,
-  comments: true,
+  comments: false,
   stylistic: true,
+  validate: true,
 };
 
 const exit = (err) => {
@@ -66,7 +67,8 @@ const exit = (err) => {
 };
 
 async function main() {
-  const generatedCss = await remapCss(await fetchCss(sources), mappings, remapOpts);
+  let generatedCss = await remapCss(await fetchCss(sources), mappings, remapOpts);
+  generatedCss = `  /* begin remap-css rules */\n${generatedCss}\n  /* end remap-css rules */`;
   await writeFile(cssFile, (await readFile(cssFile, "utf8")).replace(replaceRe, generatedCss));
 }
 
