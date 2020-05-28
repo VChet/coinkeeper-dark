@@ -13,6 +13,7 @@ const mappings = {
 
   "$background: rgba(244,244,241,.4)": "var(--gray)",
   "$background: #989898": "var(--gray)",
+  "$background: #f0f0f0": "var(--gray)",
 
   "$background: #dedcdc": "var(--gray-light)",
   // Color
