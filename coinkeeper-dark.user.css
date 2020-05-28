@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     0.5.0
+@version     1.0.0
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -16,7 +16,7 @@
 }
 ==/UserStyle== */
 @-moz-document domain("coinkeeper.me") {
-  /*! Coinkeeper Dark 0.5.0 */
+  /*! Coinkeeper Dark 1.0.0 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
   /*[[border-radius]]*/
   :root {
@@ -238,7 +238,11 @@
   .ck-transaction__tags-wrapper {
     color: var(--text);
   }
-  .ck-transaction__comment, .ck-transaction__deleted-overlay {
+  .ck-transaction__comment {
+    color: var(--light);
+  }
+  .ck-transaction__deleted-overlay {
+    background: var(--gray);
     color: var(--light);
   }
   html .ck-transaction__return-overlay {
@@ -249,6 +253,7 @@
     color: var(--light);
   }
   .ck-transaction_item--delete {
+    background: var(--gray);
     color: var(--light);
   }
   .ck-transaction_item--date {
@@ -451,6 +456,9 @@
   .ck-landing__disclaimer_dark .ck-landing__disclaimer-link {
     color: var(--text);
   }
+  .ck-landing__row_bg_gray {
+    background: var(--gray);
+  }
   .ck-landing__heading, .ck-landing__rating-text {
     color: var(--light);
   }
@@ -462,6 +470,11 @@
   }
   .ck-landing__review-photo {
     background: var(--gray-dark);
+  }
+  @media (min-width: 768px) {
+    .ck-landing__footer_bg_gray {
+      background: var(--gray);
+    }
   }
   .ck-landing__footer-group-title, .ck-landing__footer-title-link {
     color: var(--light);
