@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/github/tag/VChet/Coinkeeper-Dark.svg?label=version" alt="Version">
   </a>
   <a href="https://david-dm.org/VChet/Coinkeeper-Dark?type=dev">
-    <img src="https://img.shields.io/david/dev/StylishThemes/GitHub-Dark.svg?label=devDependencies" alt="devDependencies">
+    <img src="https://img.shields.io/david/dev/VChet/Coinkeeper-Dark.svg?label=devDependencies" alt="devDependencies">
   </a>
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
@@ -29,14 +29,11 @@
 Anyone and everyone is welcome to [contribute](https://github.com/VChet/Coinkeeper-Dark/pulls) and report any [issues](https://github.com/VChet/Coinkeeper-Dark/issues).
 
 ## Development
-1. [Fork](https://github.com/VChet/Coinkeeper-Dark/fork) and download this repository.
-1. Install [Node.js](https://nodejs.org/).
-1. Install all dependencies using `npm install`.
-1. Install gulp-cli using `npm install -g gulp-cli`.
-1. Make your changes in `coinkeeper-dark.css`.
-1. Use available tasks if needed:
-   * `gulp lint`: run Stylelint on all css files.
-   * `npm run patch`: increment the version on the patch version number, creates commit and tag.
-   * `npm run minor`: increment the version on the minor version number, creates commit and tag.
-   * `npm run major`: increment the version on the major version number, creates commit and tag.
-7. Make a pull request.
+1. [Fork](https://github.com/VChet/Coinkeeper-Dark/fork) and download this repository
+1. Install [Node.js](https://nodejs.org/)
+1. Install all dependencies using `npm install`
+1. Change [mappings](./tools/generate.js)
+1. Generate style with `npm run generate`
+1. Make additional changes in `coinkeeper-dark.user.css` if needed
+1. Commit and push your changes
+1. Make a pull request
