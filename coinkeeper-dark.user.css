@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     1.0.0
+@version     1.0.1
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -16,7 +16,7 @@
 }
 ==/UserStyle== */
 @-moz-document domain("coinkeeper.me") {
-  /*! Coinkeeper Dark 1.0.0 */
+  /*! Coinkeeper Dark 1.0.1 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
   /*[[border-radius]]*/
   :root {
@@ -173,7 +173,7 @@
     color: var(--light);
   }
   .ck-button_color_white {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
     color: var(--text);
   }
   .ck-button_color_transparent:hover, .ck-button_color_yellow,
@@ -242,18 +242,18 @@
     color: var(--light);
   }
   .ck-transaction__deleted-overlay {
-    background: var(--gray);
+    background-color: var(--gray);
     color: var(--light);
   }
   html .ck-transaction__return-overlay {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-transaction_header {
     border-bottom-color: var(--gray-light);
     color: var(--light);
   }
   .ck-transaction_item--delete {
-    background: var(--gray);
+    background-color: var(--gray);
     color: var(--light);
   }
   .ck-transaction_item--date {
@@ -298,13 +298,13 @@
     color: var(--light);
   }
   .picker__holder {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .picker__day--highlighted {
     box-shadow: none;
   }
   .picker__button--clear, .picker__button--close, .picker__button--today {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .picker__button--clear:hover, .picker__button--close:hover,
   .picker__button--today:hover {
@@ -354,7 +354,7 @@
   }
   .ck-bank-import__add-bank, .ck-bank-import__bank-account-item,
   .ck-bank-import__bank-login-head, .ck-bank-import__connect-account {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-bank-import__bank-account-item, .ck-bank-import__bank-login-head,
   .ck-bank-import__connect-account {
@@ -370,22 +370,22 @@
     color: var(--text);
   }
   .ck-tariff__price-selector-list {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-tariff__advantages-comment {
     color: var(--text);
   }
-  @media (min-width: 600px) {
+  @media (min-width:600px) {
     .ck-billing-form__form-wrapper {
-      background: var(--gray-dark);
+      background-color: var(--gray-dark);
     }
   }
   .ck-billing-form__card-input-block {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
-  @media (min-width: 600px) {
+  @media (min-width:600px) {
     .ck-billing-form__card-input {
-      background: var(--gray-dark);
+      background-color: var(--gray-dark);
     }
   }
   .ck-category-block__header {
@@ -400,7 +400,7 @@
     color: var(--light);
   }
   .ck-category__icon_plus::after, .ck-category__icon_plus::before {
-    background: var(--gray-light);
+    background-color: var(--gray-light);
   }
   .ck-day-slice__date {
     color: var(--text);
@@ -436,11 +436,8 @@
   .ck-header_new .ck-header__profile {
     color: var(--text);
   }
-  .ck-footer {
+  .ck-footer, .ck-page_background_landing {
     background-color: var(--gray-dark);
-  }
-  .ck-page_background_landing {
-    background: var(--gray-dark);
   }
   .ck-landing__body-container, .ck-landing__body-heading,
   .ck-landing__features-tariff-button-label, .ck-landing__tagline {
@@ -450,14 +447,14 @@
     color: var(--text);
   }
   .ck-landing__input {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-landing__disclaimer_dark,
   .ck-landing__disclaimer_dark .ck-landing__disclaimer-link {
     color: var(--text);
   }
   .ck-landing__row_bg_gray {
-    background: var(--gray);
+    background-color: var(--gray);
   }
   .ck-landing__heading, .ck-landing__rating-text {
     color: var(--light);
@@ -469,11 +466,11 @@
     color: var(--light);
   }
   .ck-landing__review-photo {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
-  @media (min-width: 768px) {
+  @media (min-width:768px) {
     .ck-landing__footer_bg_gray {
-      background: var(--gray);
+      background-color: var(--gray);
     }
   }
   .ck-landing__footer-group-title, .ck-landing__footer-title-link {
@@ -486,14 +483,14 @@
     color: var(--light);
   }
   .ck-landing__dropdown {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-landing__dropdown-item, .ck-landing__slide-heading,
   .ck-landing__slide-text {
     color: var(--light);
   }
   .ck-landing__slide-footer_sticky {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-landing__expense-title, .ck-landing__slide-result-heading,
   .ck-landing__slide-result-text_narrow, .ck-landing__slide-result-wrapper,
@@ -528,9 +525,9 @@
     box-shadow: none;
   }
   html .ck-page_background_platinum {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
-  @media (min-width: 600px) {
+  @media (min-width:600px) {
     html .ck-page_background_platinum {
       background-color: var(--gray-dark);
     }
@@ -539,7 +536,7 @@
     color: var(--light);
   }
   .ck-buy-platinum__body, .ck-buy-platinum__store-item, .ck-upsale {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-purchase {
     color: var(--light);
@@ -554,13 +551,13 @@
   .ck-legal-info {
     color: var(--text);
   }
-  @media (min-width: 768px) {
+  @media (min-width:768px) {
     .ck-legal-info {
-      background: var(--gray-dark);
+      background-color: var(--gray-dark);
     }
   }
   .ck-popup__ready-button {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   input.ck-popup__input:-ms-input-placeholder {
     color: var(--light);
@@ -587,7 +584,7 @@
     color: var(--light);
   }
   .ck-onboarding-step {
-    background: var(--gray-dark);
+    background-color: var(--gray-dark);
   }
   .ck-onboarding-step__category .ck-category__title {
     color: var(--light);
