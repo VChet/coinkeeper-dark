@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "fetch-css": "^3.1.5",
-    "remap-css": "^5.0.1",
+    "remap-css": "^6.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
     "versions": "^8.4.3"
