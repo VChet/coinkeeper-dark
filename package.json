@@ -23,7 +23,7 @@
     "fetch-css": "^3.1.5",
     "remap-css": "^6.0.0",
     "stylelint": "^13.7.2",
-    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "versions": "^8.4.3"
   }
 }
