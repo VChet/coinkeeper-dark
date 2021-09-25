@@ -26,6 +26,13 @@
     --text: #959595;
     --light: #AAAAAA;
   }
+  /* Popup */
+  .Popup {
+    color: var(--text);
+  }
+  .ck-popup__header {
+    background-color: var(--gray-dark);
+  }
   /* Filters */
   .ck-category__icon,
   .ck-header_title,
