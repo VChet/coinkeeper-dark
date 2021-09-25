@@ -41,14 +41,9 @@ const mappings = {
   "box-shadow: 2px 2px 9px rgba(0, 0, 0, .13)": "box-shadow: none",
 };
 
-const sources = [
-  { url: "https://coinkeeper.me/introduce-yourself" }
-];
+const sources = [{ url: "https://coinkeeper.me/introduce-yourself" }];
 
-const ignoreSelectors = [
-  /\spre$/,
-  /^table$/
-];
+const ignoreSelectors = [/\spre$/, /^table$/];
 
 const replaceRe = /.*begin remap-css[\s\S]+end remap-css.*/gm;
 const cssFile = join(__dirname, "..", "coinkeeper-dark.user.css");
@@ -56,8 +51,6 @@ const cssFile = join(__dirname, "..", "coinkeeper-dark.user.css");
 const remapOpts = {
   ignoreSelectors,
   indentCss: 2,
-  lineLength: 76,
-  comments: false,
   stylistic: true,
   validate: true,
 };
@@ -68,9 +61,16 @@ const exit = (err) => {
 };
 
 async function main() {
-  let generatedCss = await remapCss(await fetchCss(sources), mappings, remapOpts);
+  let generatedCss = await remapCss(
+    await fetchCss(sources),
+    mappings,
+    remapOpts
+  );
   generatedCss = `  /* begin remap-css rules */\n${generatedCss}\n  /* end remap-css rules */`;
-  await writeFile(cssFile, (await readFile(cssFile, "utf8")).replace(replaceRe, generatedCss));
+  await writeFile(
+    cssFile,
+    (await readFile(cssFile, "utf8")).replace(replaceRe, generatedCss)
+  );
 }
 
 main().then(exit).catch(exit);
