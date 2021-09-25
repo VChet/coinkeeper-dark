@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     1.0.1
+@version     1.0.2
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -16,7 +16,7 @@
 }
 ==/UserStyle== */
 @-moz-document domain("coinkeeper.me") {
-  /*! Coinkeeper Dark 1.0.1 */
+  /*! Coinkeeper Dark 1.0.2 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
   /*[[border-radius]]*/
   :root {
@@ -173,7 +173,7 @@
   /* END Components */
 
   /* begin remap-css rules */
-  body {
+  .ck-title, body {
     color: var(--text);
   }
   .ck-button {
@@ -195,6 +195,7 @@
   }
   .ck-form-item_input {
     background-color: var(--gray-dark);
+    color: var(--text);
   }
   .ck-selectbox select option {
     color: var(--light);
@@ -492,8 +493,7 @@
   .ck-landing__dropdown {
     background-color: var(--gray-dark);
   }
-  .ck-landing__dropdown-item, .ck-landing__slide-heading,
-  .ck-landing__slide-text {
+  .ck-landing__dropdown-item, .ck-landing__slide-heading, .ck-landing__slide-text {
     color: var(--light);
   }
   .ck-landing__slide-footer_sticky {
@@ -569,12 +569,10 @@
   input.ck-popup__input:-ms-input-placeholder {
     color: var(--light);
   }
-  input.ck-popup__input:-ms-input-placeholder,
-  input.ck-popup__input::placeholder {
+  input.ck-popup__input:-ms-input-placeholder, input.ck-popup__input::placeholder {
     color: var(--light);
   }
-  input.ck-popup__input:-moz-placeholder,
-  input.ck-popup__input::-moz-placeholder {
+  input.ck-popup__input:-moz-placeholder, input.ck-popup__input::-moz-placeholder {
     color: var(--light) !important;
   }
   .ck-icon-picker__wrapper::-webkit-scrollbar-thumb {
