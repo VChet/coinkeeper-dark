@@ -4,6 +4,9 @@
   <a href="https://github.com/VChet/Coinkeeper-Dark/tags">
     <img src="https://img.shields.io/github/tag/VChet/Coinkeeper-Dark.svg?label=version" alt="Version">
   </a>
+  <a href="https://github.com/VChet/Coinkeeper-Dark/actions?query=workflow%3Astylelint">
+    <img src="https://github.com/VChet/Coinkeeper-Dark/workflows/stylelint/badge.svg?branch=master" alt="stylelint">
+  </a>
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
   </a>
