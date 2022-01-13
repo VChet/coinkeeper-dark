@@ -4,7 +4,7 @@
 const fetchCss = require("fetch-css");
 const remapCss = require("remap-css");
 const { join } = require("path");
-const { readFile, writeFile } = require("fs").promises;
+const { readFile, writeFile } = require("fs/promises");
 
 const mappings = {
   // Background
@@ -43,13 +43,10 @@ const mappings = {
 };
 
 const sources = [{ url: "https://coinkeeper.me/introduce-yourself" }];
-
 const ignoreSelectors = [/\spre$/, /^table$/];
+const sourceFile = join(__dirname, "..", "coinkeeper-dark.user.css");
 
-const replaceRe = /.*begin remap-css[\s\S]+end remap-css.*/gm;
-const cssFile = join(__dirname, "..", "coinkeeper-dark.user.css");
-
-const remapOpts = {
+const remapOptions = {
   ignoreSelectors,
   indentCss: 2,
   stylistic: true,
@@ -62,16 +59,16 @@ const exit = (err) => {
 };
 
 async function main() {
-  let generatedCss = await remapCss(
-    await fetchCss(sources),
-    mappings,
-    remapOpts
-  );
-  generatedCss = `  /* begin remap-css rules */\n${generatedCss}\n  /* end remap-css rules */`;
-  await writeFile(
-    cssFile,
-    (await readFile(cssFile, "utf8")).replace(replaceRe, generatedCss)
-  );
+  let generatedCss = await remapCss(await fetchCss(sources), mappings, remapOptions);
+
+  const prefix = `  /* begin remap-css rules */`;
+  const suffix = `  /* end remap-css rules */`;
+  generatedCss = `${prefix}\n${generatedCss}\n${suffix}`;
+
+  const re = new RegExp(/.*begin remap-css[\s\S]+end remap-css.*/, "gm");
+  let sourceCss = await readFile(sourceFile, "utf8");
+  sourceCss = sourceCss.replace(re, generatedCss);
+  return writeFile(sourceFile, sourceCss);
 }
 
 main().then(exit).catch(exit);
