@@ -12,13 +12,13 @@
   No "No" <<<EOT
   EOT;
   Yes "Yes" <<<EOT
-  .ck-card-item_icon, .ck-category__icon-wrapper{border-radius:10%!important} EOT;
+  .ck-card-item_icon, .ck-category__icon-wrapper{border-radius:10%} EOT;
 }
 ==/UserStyle== */
 @-moz-document domain("coinkeeper.me") {
   /*! Coinkeeper Dark 1.1.0 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
-  /* [[border-radius]] */
+  /*[[border-radius]]*/
   :root {
     --gray-dark: #222;
     --gray: #272727;
