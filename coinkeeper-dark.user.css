@@ -18,13 +18,13 @@
 @-moz-document domain("coinkeeper.me") {
   /*! Coinkeeper Dark 1.0.2 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
-  /*[[border-radius]]*/
+  /* [[border-radius]] */
   :root {
-    --gray-dark: #222222;
+    --gray-dark: #222;
     --gray: #272727;
     --gray-light: #303030;
     --text: #959595;
-    --light: #AAAAAA;
+    --light: #aaa;
   }
   /* Popup */
   .Popup {
@@ -47,7 +47,7 @@
   /* Background blur with active modal */
   .ck-popup-message,
   .ck-fade {
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgb(34 34 34 / 80%);
   }
   /* END Filters */
   /* Components */
@@ -56,7 +56,7 @@
     background-color: var(--gray-dark);
   }
   .TagsInput__Body .Select-control:hover {
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 6%);
   }
   /* Chart */
   .Chart {
@@ -70,8 +70,9 @@
   .FiltersAndControls .Level2__DatepickerButton {
     filter: brightness(50%);
   }
-  .Datepicker_development__backgroundOverlay, .Datepicker_production__backgroundOverlay {
-    background-color: rgba(34, 34, 34, 0.8);
+  .Datepicker_development__backgroundOverlay,
+  .Datepicker_production__backgroundOverlay {
+    background-color: rgb(34 34 34 / 80%);
   }
   .Dropdown .Dropdown-placeholder,
   .TagsInput__Body .Select-placeholder {
@@ -99,7 +100,7 @@
   }
   .Chart .stage .zoomIn .circle,
   .Chart .stage .zoomOut .circle {
-    fill: rgba(255, 255, 255, 0.1);
+    fill: rgb(255 255 255 / 10%);
   }
   .Chart .stage .cutoff-curve,
   .Chart .stage .cutoff-area {
@@ -127,7 +128,7 @@
   }
   .Chart .tooltip {
     background-color: var(--gray-dark);
-    box-shadow: 0px 2px 5px 0px var(--gray-light);
+    box-shadow: 0 2px 5px 0 var(--gray-light);
   }
   /* END Chart */
   /* Options */
@@ -146,7 +147,7 @@
     background-color: var(--gray-dark);
   }
   .Popup__Overlay {
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgb(34 34 34 / 80%);
   }
   .Row {
     border-bottom-color: var(--gray);
@@ -156,7 +157,6 @@
     color: var(--text);
   }
   /* END Components */
-
   /* begin remap-css rules */
   .ck-title, body {
     color: var(--text);
