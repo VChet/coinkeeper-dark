@@ -44,14 +44,6 @@
   .ck-transaction__delete {
     filter: brightness(50%);
   }
-  /* Main input */
-  .ck-add-transaction {
-    background-color: var(--gray-dark);
-    color: var(--text);
-  }
-  .ck-add-transaction input {
-    color: var(--text);
-  }
   /* Scrollbars */
   ::-webkit-scrollbar-thumb {
     background-color: var(--gray-dark) !important;
