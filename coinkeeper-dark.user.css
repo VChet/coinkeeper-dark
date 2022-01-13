@@ -44,13 +44,6 @@
   .ck-transaction__delete {
     filter: brightness(50%);
   }
-  /* Scrollbars */
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--gray-dark) !important;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: var(--gray-light) !important;
-  }
   /* Background blur with active modal */
   .ck-popup-message,
   .ck-fade {
