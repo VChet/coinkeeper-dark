@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="./images/logo.png" width="580">
+  <img alt="logo" src="./meta/logo.png" width="580">
   <br>
   <a href="https://github.com/VChet/Coinkeeper-Dark/tags">
     <img src="https://img.shields.io/github/tag/VChet/Coinkeeper-Dark.svg?label=version" alt="Version">
@@ -17,7 +17,7 @@
 
 ## Preview
 
-![Preview](./images/preview.png)
+![Preview](./meta/preview.png)
 
 ## Installation
 
