@@ -16,8 +16,9 @@
     "patch": "versions patch --all coinkeeper-dark.user.css",
     "minor": "versions minor --all coinkeeper-dark.user.css",
     "major": "versions major --all coinkeeper-dark.user.css",
-    "generate": "node ./tools/generate.js",
-    "test": "stylelint **/*.css"
+    "lint": "stylelint **/*.css",
+    "lint:fix": "npm run lint -- --fix",
+    "generate": "node ./tools/generate.js && npm run lint:fix"
   },
   "devDependencies": {
     "fetch-css": "^3.1.12",
