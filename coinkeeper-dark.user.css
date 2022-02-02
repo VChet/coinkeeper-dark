@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     1.1.1
+@version     1.1.2
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -16,7 +16,7 @@
 }
 ==/UserStyle== */
 @-moz-document domain("coinkeeper.me") {
-  /*! Coinkeeper Dark 1.1.1 */
+  /*! Coinkeeper Dark 1.1.2 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
   /*[[border-radius]]*/
   :root {
@@ -458,7 +458,15 @@
   .ck-header_new .ck-header__profile {
     color: var(--text);
   }
-  .ck-footer,
+  .ck-footer {
+    background-color: var(--gray-dark);
+  }
+  .ck-footer-spec,
+  .ck-footer-spec p,
+  .ck-footer-spec p a,
+  .ck-footer_copy {
+    color: var(--text);
+  }
   .ck-page_background_landing {
     background-color: var(--gray-dark);
   }
