@@ -131,6 +131,14 @@
     box-shadow: 0 2px 5px 0 var(--gray-light);
   }
   /* END Chart */
+  /* Login */
+  .ck-login_form input {
+    caret-color: var(--text);
+  }
+  .ck-login_form input:-webkit-autofill {
+    -webkit-text-fill-color: var(--text) !important;
+    box-shadow: 0 0 0 50px var(--gray-dark) inset;
+  }
   /* Options */
   .Title {
     color: var(--text);
