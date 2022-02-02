@@ -20,6 +20,7 @@ const mappings = {
   "color: #333": "color: var(--text)",
   "color: #5f6160": "color: var(--text)",
   "color: #64635f": "color: var(--text)",
+  "color: #646c69": "color: var(--text)",
   "color: #696868": "color: var(--text)",
   "color: #757474": "color: var(--text)",
   "color: #757575": "color: var(--text)",
