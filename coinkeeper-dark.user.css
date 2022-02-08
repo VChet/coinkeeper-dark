@@ -34,8 +34,10 @@
     background-color: var(--gray-dark);
   }
   /* Filters */
+  .ck-card-details__help,
   .ck-category__icon,
   .ck-header_title,
+  .ck-landing__chart,
   .ck-page_background,
   [class^="ck-card-item_icon--"] {
     filter: invert(1) grayscale(1);
@@ -50,6 +52,24 @@
     background-color: rgb(34 34 34 / 80%);
   }
   /* END Filters */
+  /* Landing */
+  .ck-landing__personal-data-block div {
+    color: var(--text) !important;
+  }
+  .ck-page_background.ck-page_background_landing {
+    background: inherit !important;
+  }
+  .ck-button.ck-card-details__button_disabled {
+    color: var(--gray-dark);
+  }
+  /* Login */
+  .ck-login_form input {
+    caret-color: var(--text);
+  }
+  .ck-login_form input:-webkit-autofill {
+    -webkit-text-fill-color: var(--text) !important;
+    box-shadow: 0 0 0 50px var(--gray-dark) inset;
+  }
   /* Components */
   .Card,
   .TagsInput__Body .Select-control {
@@ -131,14 +151,6 @@
     box-shadow: 0 2px 5px 0 var(--gray-light);
   }
   /* END Chart */
-  /* Login */
-  .ck-login_form input {
-    caret-color: var(--text);
-  }
-  .ck-login_form input:-webkit-autofill {
-    -webkit-text-fill-color: var(--text) !important;
-    box-shadow: 0 0 0 50px var(--gray-dark) inset;
-  }
   /* Options */
   .Title {
     color: var(--text);

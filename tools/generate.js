@@ -10,6 +10,7 @@ const mappings = {
   // Background
   "$background: #fff": "var(--gray-dark)",
   "$background: #fbfbf9": "var(--gray-dark)",
+  "$background: #e4e4e4": "var(--gray-dark)",
 
   "$background: rgba(244,244,241,.4)": "var(--gray)",
   "$background: #989898": "var(--gray)",
@@ -31,13 +32,16 @@ const mappings = {
   "color: #000": "color: var(--light)",
   "color: #404040": "color: var(--light)",
   "color: #4f4f4f": "color: var(--light)",
+  "color: #585858": "color: var(--light)",
   "color: #959595": "color: var(--light)",
+  "color: rgba(117,117,117,.75)": "color: var(--light)",
   // Borders
   "$border: #e8e7e7": "var(--gray)",
   "$border: #f3f2f2": "var(--gray)",
   "$border: rgba(222,220,220,.8)": "var(--gray)",
   "$border: #f3f2f2;": "var(--gray)",
 
+  "$border: #404040": "var(--gray-light)",
   "$border: #dedcdc": "var(--gray-light)",
   // Box-shadow
   "box-shadow: 2px 2px 9px rgba(0, 0, 0, .13)": "box-shadow: none",
