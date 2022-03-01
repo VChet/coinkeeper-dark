@@ -50,7 +50,7 @@ const mappings = {
 
 const sources = [{ url: "https://coinkeeper.me/introduce-yourself" }];
 const ignoreSelectors = [/\spre$/, /^table$/];
-const sourceFile = join(__dirname, "..", "coinkeeper-dark.user.css");
+const sourceFile = join(__dirname, "coinkeeper-dark.user.css");
 
 const remapOptions = {
   ignoreSelectors,

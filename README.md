@@ -37,7 +37,7 @@ Anyone and everyone is welcome to [contribute](https://github.com/VChet/Coinkeep
 1. [Fork](https://github.com/VChet/Coinkeeper-Dark/fork) and download this repository
 1. Install [Node.js](https://nodejs.org/)
 1. Install all dependencies using `npm install`
-1. Change [mappings](./tools/generate.js)
+1. Change [mappings](generate.js)
 1. Generate style with `npm run generate`
 1. Make additional changes in `coinkeeper-dark.user.css` if needed
 1. Commit and push your changes
