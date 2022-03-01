@@ -3,6 +3,7 @@
 
 const fetchCss = require("fetch-css");
 const remapCss = require("remap-css");
+const { lint } = require("stylelint");
 const { join } = require("path");
 const { readFile, writeFile } = require("fs/promises");
 
@@ -73,7 +74,8 @@ async function main() {
   const re = new RegExp(/.*begin remap-css[\s\S]+end remap-css.*/, "gm");
   let sourceCss = await readFile(sourceFile, "utf8");
   sourceCss = sourceCss.replace(re, generatedCss);
-  return writeFile(sourceFile, sourceCss);
+  const { output } = await lint({ code: sourceCss, fix: true });
+  return writeFile(sourceFile, output);
 }
 
 main().then(exit).catch(exit);

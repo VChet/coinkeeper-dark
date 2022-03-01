@@ -18,7 +18,7 @@
     "major": "versions major --all coinkeeper-dark.user.css",
     "lint": "stylelint **/*.css",
     "lint:fix": "npm run lint -- --fix",
-    "generate": "node ./tools/generate.js && npm run lint:fix"
+    "generate": "node ./tools/generate.js"
   },
   "devDependencies": {
     "fetch-css": "^3.1.12",
