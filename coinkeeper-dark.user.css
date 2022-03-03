@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     1.1.3
+@version     1.1.4
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -16,7 +16,7 @@
 }
 ==/UserStyle== */
 @-moz-document domain("coinkeeper.me") {
-  /*! Coinkeeper Dark 1.1.3 */
+  /*! Coinkeeper Dark 1.1.4 */
   /*! License: https://creativecommons.org/licenses/by-sa/4.0/ */
   /*[[border-radius]]*/
   :root {
@@ -263,6 +263,7 @@
   .ck-transaction__amount-bank {
     color: var(--text);
   }
+  .ck-transaction__debt-data,
   .ck-transaction__debt-data:hover,
   .ck-transaction__debt-data:hover .ck-transaction__debt-data-input {
     color: var(--light);
