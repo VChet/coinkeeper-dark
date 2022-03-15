@@ -35,11 +35,11 @@
   }
   /* Filters */
   .ck-card-details__help,
-  .ck-category__icon,
+  .ck-category__icon:not(.ck-category__icon_tinkoff),
   .ck-header_title,
   .ck-landing__chart,
   .ck-page_background,
-  [class^="ck-card-item_icon--"] {
+  [class^="ck-card-item_icon--"]:not(.ck-card-item_icon--tinkoff) {
     filter: invert(1) grayscale(1);
   }
   .ck-transaction__calendar,
@@ -708,4 +708,15 @@
     color: var(--text);
   }
   /* end remap-css rules */
+  .ck-category__icon,
+  [class^="ck-card-item_icon--"] {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /* begin icon-css rules */
+  /* end icon-css rules */
 }

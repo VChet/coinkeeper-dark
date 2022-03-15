@@ -5,7 +5,7 @@ const fetchCss = require("fetch-css");
 const remapCss = require("remap-css");
 const { lint } = require("stylelint");
 const { join } = require("path");
-const { readFile, writeFile } = require("fs/promises");
+const { readFile, writeFile, readdir } = require("fs/promises");
 
 const mappings = {
   // Background
@@ -65,16 +65,37 @@ const exit = (err) => {
   process.exit(err ? 1 : 0);
 };
 
+async function generateIconStyles() {
+  const filenameReg = new RegExp(/(?<=ic_ms_).*(?=\.webp)/, "gm");
+  let styles = "";
+  await readdir(join(__dirname, "icons")).then(async (files) => {
+    for await (let filename of files) {
+      const name = filename.match(filenameReg);
+      const buffer = await readFile(join(__dirname, "icons", filename));
+      const selector = [`.ck-category__icon_${name}, .ck-card-item_icon--${name} {`];
+      selector.push(`  background-image: url("data:image/webp;base64,${buffer.toString("base64")}");`);
+      selector.push("}");
+      styles += "\n" + selector.join("\n");
+    }
+  });
+  return styles;
+}
+
 async function main() {
   let generatedCss = await remapCss(await fetchCss(sources), mappings, remapOptions);
-
   const prefix = `  /* begin remap-css rules */`;
   const suffix = `  /* end remap-css rules */`;
   generatedCss = `${prefix}\n${generatedCss}\n${suffix}`;
 
-  const re = new RegExp(/.*begin remap-css[\s\S]+end remap-css.*/, "gm");
+  let iconsCss = await generateIconStyles();
+  const iconsPrefix = `  /* begin icon-css rules */`;
+  const iconsSuffix = `  /* end icon-css rules */`;
+  iconsCss = `${iconsPrefix}\n${iconsCss}\n${iconsSuffix}`;
+
+  const remapReg = new RegExp(/.*begin remap-css[\s\S]+end remap-css.*/, "gm");
+  const iconsReg = new RegExp(/.*begin icon-css[\s\S]+end icon-css.*/, "gm");
   let sourceCss = await readFile(sourceFile, "utf8");
-  sourceCss = sourceCss.replace(re, generatedCss);
+  sourceCss = sourceCss.replace(remapReg, generatedCss).replace(iconsReg, iconsCss);
   const { output } = await lint({ code: sourceCss, fix: true });
   return writeFile(sourceFile, output);
 }
