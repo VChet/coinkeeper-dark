@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name        [Dev] Coinkeeper Blur
+@description Blurs transaction title and amount
+@namespace   Coinkeeper Dark
+@version     1.2.0
+@author      VChet
+@homepageURL https://github.com/VChet/Coinkeeper-Dark
+@updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/dev-coinkeeper.user.css
+@supportURL  https://github.com/VChet/Coinkeeper-Dark/issues
+@license     CC-BY-SA-4.0
+==/UserStyle== */
+@-moz-document domain("coinkeeper.me") {
+  .ck-category__title,
+  .ck-category__amount,
+  .ck-category-block__title,
+  .ck-transaction__source,
+  .ck-transaction__destination,
+  .ck-transaction__amount,
+  .ck-day-slice__footer-value,
+  .js-profile-email,
+  .ck-category-block__stats,
+  .ck-transaction__comment,
+  .item.middle-item,
+  .item.right-item,
+  .Settings__email .color-dark {
+    filter: blur(5px);
+  }
+  .ck-license-locker-icon-import {
+    display: none;
+  }
+}
