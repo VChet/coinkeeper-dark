@@ -78,6 +78,9 @@
   .TagsInput__Body .Select-control:hover {
     box-shadow: 0 1px 0 rgb(255 255 255 / 6%);
   }
+  .Legend .LegendBody__separator {
+    background: var(--gray);
+  }
   /* Chart */
   .Chart {
     border-color: var(--gray);
