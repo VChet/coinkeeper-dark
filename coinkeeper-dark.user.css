@@ -34,11 +34,9 @@
   }
   /* Filters */
   .ck-card-details__help,
-  .ck-category__icon:not(.ck-category__icon_tinkoff),
   .ck-header_title,
   .ck-landing__chart,
-  .ck-page_background,
-  [class^="ck-card-item_icon--"]:not(.ck-card-item_icon--tinkoff) {
+  .ck-page_background {
     filter: invert(1) grayscale(1);
   }
   .ck-transaction__calendar,
@@ -721,6 +719,10 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  .ck-category__icon:not(.ck-category__icon_tinkoff),
+  [class^="ck-card-item_icon--"]:not(.ck-card-item_icon--tinkoff) {
+    filter: invert(1) grayscale(1);
   }
   /* begin icon-css rules */
   .ck-category__icon_airplane,
