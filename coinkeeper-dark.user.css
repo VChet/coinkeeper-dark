@@ -21,6 +21,7 @@
     --gray-dark: #222;
     --gray: #272727;
     --gray-light: #303030;
+    --gray-tp: #22222280;
     --text: #959595;
     --light: #aaa;
   }
@@ -78,6 +79,9 @@
   }
   .Legend .LegendBody__separator {
     background: var(--gray);
+  }
+  .Spinner {
+    background-color: var(--gray-tp);
   }
   /* Chart */
   .Chart {
