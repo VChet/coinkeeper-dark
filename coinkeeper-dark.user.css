@@ -78,7 +78,8 @@
   .Legend .LegendBody__separator {
     background: var(--gray);
   }
-  .Spinner {
+  .Spinner,
+  .Settings__spinner {
     background-color: var(--gray-tp);
   }
   /* Chart */
@@ -165,7 +166,13 @@
     background-color: var(--gray-dark);
     border-bottom-color: var(--gray);
   }
-  .SelectBox .Select--single > .Select-control .Select-value,
+  .Settings__BackButton,
+  .Settings__TitleLabel {
+    color: var(--text);
+  }
+  .SelectBox .Select div,
+  .SelectBox .Select span,
+  .SelectBox .Select-control .Select-value,
   .SelectBox .Select-placeholder {
     background-color: var(--gray-dark);
   }
