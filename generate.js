@@ -18,6 +18,8 @@ const mappings = {
   "$background: #f0f0f0": "var(--gray)",
 
   "$background: #dedcdc": "var(--gray-light)",
+
+  "$background: #434343": "var(--light)",
   // Color
   "color: #333": "color: var(--text)",
   "color: #5f6160": "color: var(--text)",
