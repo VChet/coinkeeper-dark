@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     1.2.1
+@version     1.2.2
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -478,9 +478,17 @@
   .ck-header_logo {
     box-shadow: none;
   }
-  .ck-header_link,
+  .ck-header_link {
+    color: var(--text);
+  }
+  .ck-header_link .ck-header__link-spacer {
+    background-color: var(--light);
+  }
   .ck-header_profile {
     color: var(--text);
+  }
+  .ck-header_profile .ck-header__link-spacer {
+    background-color: var(--light);
   }
   .ck-header_profile .ck-header_dropdown-menu {
     background-color: var(--gray-dark);
@@ -492,6 +500,9 @@
   }
   .ck-header_new .ck-header__profile {
     color: var(--text);
+  }
+  .ck-header_new .ck-header__link-spacer {
+    background-color: var(--light);
   }
   .ck-footer {
     background-color: var(--gray-dark);
