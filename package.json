@@ -21,7 +21,7 @@
     "generate": "node generate.js"
   },
   "devDependencies": {
-    "fetch-css": "^3.1.12",
+    "fetch-css": "^4.0.2",
     "remap-css": "^6.0.1",
     "stylelint": "^14.14.0",
     "stylelint-config-standard": "^29.0.0",
