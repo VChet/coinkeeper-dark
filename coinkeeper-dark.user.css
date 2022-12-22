@@ -611,8 +611,8 @@
   }
   .ck-buy-main_rate-cost,
   .ck-buy-main_rate-month-cost,
-  .ck-buy-main_rate-month-cost::after,
   .ck-buy-main_rate-month-cost strong,
+  .ck-buy-main_rate-month-cost::after,
   .ck-buy-main_rate__limitless .ck-buy-main_rate-title,
   .ck-buy-main_rate__month .ck-buy-main_rate-title,
   .ck-buy-main_rate__year .ck-buy-main_rate-month-cost,
