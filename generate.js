@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 "use strict";
 
-const fetchCss = require("fetch-css");
-const remapCss = require("remap-css");
-const { lint } = require("stylelint");
-const { join } = require("path");
-const { readFile, writeFile, readdir } = require("fs/promises");
+import fetchCss from "fetch-css";
+import remapCss from "remap-css";
+import stylelint from "stylelint";
+import url from 'url';
+import { join } from "path";
+import { readFile, writeFile, readdir } from "fs/promises";
+
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 const mappings = {
   // Background
@@ -99,7 +102,7 @@ async function main() {
   const iconsReg = new RegExp(/.*begin icon-css[\s\S]+end icon-css.*/, "gm");
   let sourceCss = await readFile(sourceFile, "utf8");
   sourceCss = sourceCss.replace(remapReg, generatedCss).replace(iconsReg, iconsCss);
-  const { output } = await lint({ code: sourceCss, fix: true });
+  const { output } = await stylelint.lint({ code: sourceCss, fix: true });
   return writeFile(sourceFile, output);
 }
 
