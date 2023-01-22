@@ -86,6 +86,12 @@
   .Chart {
     border-color: var(--gray);
   }
+  .Chart.is-empty {
+    background-color: var(--gray-dark);
+  }
+  .Chart__message {
+    color: var(--text);
+  }
   .Select-input input {
     color: var(--text);
   }
