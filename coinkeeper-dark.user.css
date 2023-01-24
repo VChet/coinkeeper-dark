@@ -68,12 +68,8 @@
     box-shadow: 0 0 0 50px var(--gray-dark) inset;
   }
   /* Components */
-  .Card,
-  .TagsInput__Body .Select-control {
+  .Card {
     background-color: var(--gray-dark);
-  }
-  .TagsInput__Body .Select-control:hover {
-    box-shadow: 0 1px 0 rgb(255 255 255 / 6%);
   }
   .Legend .LegendBody__separator {
     background: var(--gray);
@@ -95,6 +91,27 @@
   .Select-input input {
     color: var(--text);
   }
+  .TagsInput__Body .Select-menu-outer {
+    border-color: var(--gray);
+  }
+  .TagsInput__Body .Select-control {
+    background-color: var(--gray-dark);
+  }
+  .TagsInput__Body .Select-control:hover {
+    box-shadow: 0 1px 0 rgb(255 255 255 / 6%);
+  }
+  .TagsInput__Body .Select-option {
+    background-color: var(--gray-dark);
+    color: var(--text);
+  }
+  .TagsInput__Body .Select-option.group,
+  .TagsInput__Body .Select-option.is-focused {
+    background-color: var(--gray);
+    color: var(--light);
+  }
+  .TagsInput__Body .Select-placeholder {
+    color: var(--light);
+  }
   .FiltersAndControls .Level2__Chart.AreaTypeChartButton,
   .FiltersAndControls .Level2__Chart.DonutTypeChartButton,
   .FiltersAndControls .Level2__DatepickerButton {
@@ -104,8 +121,7 @@
   .Datepicker_production__backgroundOverlay {
     background-color: rgb(34 34 34 / 80%);
   }
-  .Dropdown .Dropdown-placeholder,
-  .TagsInput__Body .Select-placeholder {
+  .Dropdown .Dropdown-placeholder {
     color: var(--light);
   }
   .Chart .stage .base {
