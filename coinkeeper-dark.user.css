@@ -2,7 +2,7 @@
 @name        Coinkeeper Dark
 @description Dark theme for coinkeeper.me
 @namespace   Coinkeeper Dark
-@version     1.2.5
+@version     1.2.6
 @author      VChet
 @homepageURL https://github.com/VChet/Coinkeeper-Dark
 @updateURL   https://raw.githubusercontent.com/VChet/Coinkeeper-Dark/master/coinkeeper-dark.user.css
@@ -269,6 +269,9 @@
   .ck-dropdown-list__item--highlight,
   .ck-dropdown-list__item:hover {
     background-color: var(--gray);
+  }
+  .ck-dropdown ::-webkit-scrollbar-track {
+    background-color: var(--gray-light);
   }
   .ck-dropdown ::-webkit-scrollbar-thumb {
     background-color: var(--gray-dark);
