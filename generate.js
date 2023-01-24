@@ -12,16 +12,17 @@ const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 const mappings = {
   // Background
-  "$background: #fff": "var(--gray-dark)",
-  "$background: #fbfbf9": "var(--gray-dark)",
   "$background: #e4e4e4": "var(--gray-dark)",
   "$background: #f3f2f2": "var(--gray-dark)",
+  "$background: #fbfbf9": "var(--gray-dark)",
+  "$background: #fff": "var(--gray-dark)",
 
-  "$background: rgba(244,244,241,.4)": "var(--gray)",
   "$background: #989898": "var(--gray)",
   "$background: #f0f0f0": "var(--gray)",
+  "$background: rgba(244,244,241,.4)": "var(--gray)",
 
   "$background: #dedcdc": "var(--gray-light)",
+  "$background: #e4e3e3": "var(--gray-light)",
 
   "$background: #434343": "var(--light)",
   // Color
@@ -45,9 +46,9 @@ const mappings = {
   "color: rgba(117,117,117,.75)": "color: var(--light)",
   // Borders
   "$border: #e8e7e7": "var(--gray)",
+  "$border: #f3f2f2;": "var(--gray)",
   "$border: #f3f2f2": "var(--gray)",
   "$border: rgba(222,220,220,.8)": "var(--gray)",
-  "$border: #f3f2f2;": "var(--gray)",
 
   "$border: #404040": "var(--gray-light)",
   "$border: #dedcdc": "var(--gray-light)",
