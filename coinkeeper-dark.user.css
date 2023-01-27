@@ -121,6 +121,18 @@
   .Datepicker_production__backgroundOverlay {
     background-color: rgb(34 34 34 / 80%);
   }
+  .Dropdown .Dropdown-menu {
+    background-color: var(--gray-dark);
+  }
+  .Dropdown .Dropdown-option {
+    background-color: var(--gray-dark);
+    color: var(--text);
+  }
+  .Dropdown .Dropdown-option.is-selected,
+  .Dropdown .Dropdown-option:hover {
+    background-color: var(--gray);
+    color: var(--light);
+  }
   .Dropdown .Dropdown-placeholder {
     color: var(--light);
   }
@@ -188,9 +200,28 @@
     background-color: var(--gray-dark);
     border-bottom-color: var(--gray);
   }
+  .Settings .color-dark {
+    color: var(--light);
+  }
+  .Settings .color-dark .Select-input > input,
+  .Settings .color-dark .Select-value-label {
+    color: var(--light) !important;
+  }
   .Settings__BackButton,
   .Settings__TitleLabel {
     color: var(--text);
+  }
+  .SelectBox .Select-menu-outer {
+    border-color: var(--gray);
+  }
+  .SelectBox .Select-option {
+    background-color: var(--gray-dark);
+    color: var(--text);
+  }
+  .SelectBox .Select-option.is-focused,
+  .SelectBox .Select-option.is-selected {
+    background-color: var(--gray);
+    color: var(--light);
   }
   .SelectBox .Select div,
   .SelectBox .Select span,
