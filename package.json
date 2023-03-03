@@ -17,6 +17,7 @@
     "patch": "versions patch --all *.user.css",
     "minor": "versions minor --all *.user.css",
     "major": "versions major --all *.user.css",
+    "version": "node bump.cjs",
     "lint": "stylelint **/*.css",
     "lint:fix": "npm run lint -- --fix",
     "generate": "node generate.js"
@@ -27,7 +28,6 @@
     "remap-css": "^7.0.1",
     "stylelint": "^15.2.0",
     "stylelint-config-standard": "^30.0.1",
-    "stylelint-prettier": "^3.0.0",
-    "versions": "~9.3.4"
+    "stylelint-prettier": "^3.0.0"
   }
 }
