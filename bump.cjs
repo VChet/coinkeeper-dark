@@ -1,10 +1,8 @@
 const fs = require('fs');
 const { execSync } = require('child_process');
 
-const files = fs.readdirSync(__dirname).filter(filename => filename.endsWith('.user.css'));
-
-
 function main () {
+  const files = fs.readdirSync(__dirname).filter(filename => filename.endsWith('.user.css'));
   files.forEach(filename => {
     const path = `${__dirname}/${filename}`;
     const contents = fs.readFileSync(path, 'utf8');
