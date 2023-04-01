@@ -14,9 +14,6 @@
     "url": "https://github.com/VChet/Coinkeeper-Dark/issues"
   },
   "scripts": {
-    "patch": "versions patch --all *.user.css",
-    "minor": "versions minor --all *.user.css",
-    "major": "versions major --all *.user.css",
     "version": "node bump.cjs",
     "lint": "stylelint **/*.css",
     "lint:fix": "npm run lint -- --fix",
