@@ -15,6 +15,7 @@
     "comment-empty-line-before": "never",
     "rule-empty-line-before": "never",
     "comment-whitespace-inside": null,
+    "media-feature-range-notation": null,
     "no-descending-specificity": null,
     "selector-class-pattern": null,
     "selector-no-vendor-prefix": null
