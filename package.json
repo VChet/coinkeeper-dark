@@ -4,14 +4,14 @@
   "description": "Dark theme for coinkeeper.me",
   "author": "VChet",
   "license": "CC-BY-SA-4.0",
-  "homepage": "https://github.com/VChet/Coinkeeper-Dark#readme",
+  "homepage": "https://github.com/VChet/coinkeeper-dark#readme",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VChet/Coinkeeper-Dark.git"
+    "url": "git+https://github.com/VChet/coinkeeper-dark.git"
   },
   "bugs": {
-    "url": "https://github.com/VChet/Coinkeeper-Dark/issues"
+    "url": "https://github.com/VChet/coinkeeper-dark/issues"
   },
   "scripts": {
     "version": "node bump.cjs",
