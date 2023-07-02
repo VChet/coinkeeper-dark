@@ -239,6 +239,44 @@
   .PasswordChange__prevPass-input::placeholder {
     color: var(--text);
   }
+  /* Newsletter dialog */
+  #onesignal-popover-container #onesignal-popover-dialog,
+  #onesignal-popover-container #onesignal-slidedown-dialog,
+  #onesignal-slidedown-container #onesignal-popover-dialog,
+  #onesignal-slidedown-container #onesignal-slidedown-dialog {
+    background: var(--gray-dark) !important;
+    color: var(--text);
+  }
+  #onesignal-popover-container #onesignal-popover-dialog .popover-body-message,
+  #onesignal-popover-container #onesignal-popover-dialog .slidedown-body-message,
+  #onesignal-popover-container #onesignal-slidedown-dialog .popover-body-message,
+  #onesignal-popover-container #onesignal-slidedown-dialog .slidedown-body-message,
+  #onesignal-slidedown-container #onesignal-popover-dialog .popover-body-message,
+  #onesignal-slidedown-container #onesignal-popover-dialog .slidedown-body-message,
+  #onesignal-slidedown-container #onesignal-slidedown-dialog .popover-body-message,
+  #onesignal-slidedown-container #onesignal-slidedown-dialog .slidedown-body-message {
+    color: inherit !important;
+  }
+  #onesignal-popover-container #onesignal-popover-dialog .popover-button.secondary,
+  #onesignal-popover-container #onesignal-popover-dialog .slidedown-button.secondary,
+  #onesignal-popover-container #onesignal-slidedown-dialog .popover-button.secondary,
+  #onesignal-popover-container #onesignal-slidedown-dialog .slidedown-button.secondary,
+  #onesignal-slidedown-container #onesignal-popover-dialog .popover-button.secondary,
+  #onesignal-slidedown-container #onesignal-popover-dialog .slidedown-button.secondary,
+  #onesignal-slidedown-container #onesignal-slidedown-dialog .popover-button.secondary,
+  #onesignal-slidedown-container #onesignal-slidedown-dialog .slidedown-button.secondary {
+    background: var(--gray-dark) !important;
+  }
+  #onesignal-popover-container #onesignal-popover-dialog .popover-button.primary,
+  #onesignal-popover-container #onesignal-popover-dialog .slidedown-button.primary,
+  #onesignal-popover-container #onesignal-slidedown-dialog .popover-button.primary,
+  #onesignal-popover-container #onesignal-slidedown-dialog .slidedown-button.primary,
+  #onesignal-slidedown-container #onesignal-popover-dialog .popover-button.primary,
+  #onesignal-slidedown-container #onesignal-popover-dialog .slidedown-button.primary,
+  #onesignal-slidedown-container #onesignal-slidedown-dialog .popover-button.primary,
+  #onesignal-slidedown-container #onesignal-slidedown-dialog .slidedown-button.primary {
+    color: var(--gray-dark) !important;
+  }
   /* END Components */
   /* begin remap-css rules */
   .ck-title,
