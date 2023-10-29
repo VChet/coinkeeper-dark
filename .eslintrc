@@ -1,0 +1,18 @@
+{
+  "extends": "standard",
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "max-len": ["warn", { "code": 120 }],
+    "no-console": "off",
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["error", "never"]
+  }
+}

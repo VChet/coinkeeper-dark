@@ -4,11 +4,11 @@
 import fetchCss from "fetch-css";
 import remapCss from "remap-css";
 import stylelint from "stylelint";
-import url from 'url';
+import url from "url";
 import { join } from "path";
 import { readFile, writeFile, readdir } from "fs/promises";
 
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
 const mappings = {
   // Background
@@ -54,7 +54,7 @@ const mappings = {
   "$border: #404040": "var(--gray-light)",
   "$border: #dedcdc": "var(--gray-light)",
   // Box-shadow
-  "box-shadow: 2px 2px 9px rgba(0, 0, 0, .13)": "box-shadow: none",
+  "box-shadow: 2px 2px 9px rgba(0, 0, 0, .13)": "box-shadow: none"
 };
 
 const sources = [{ url: "https://coinkeeper.me/introduce-yourself" }];
@@ -69,7 +69,7 @@ const remapOptions = {
   validate: true
 };
 
-function exit (error) {
+function exit(error) {
   if (error) console.error(error);
   process.exit(error ? 1 : 0);
 };
@@ -77,8 +77,8 @@ function exit (error) {
 async function generateIconStyles() {
   const filenameReg = /(?<=ic_ms_).*(?=\.webp)/;
   let styles = "";
-  const files = await readdir(ICONS_DIR)
-  for (let filename of files) {
+  const files = await readdir(ICONS_DIR);
+  for (const filename of files) {
     const name = filename.match(filenameReg);
     const buffer = await readFile(join(ICONS_DIR, filename));
     const selector = [`.ck-category__icon_${name}, .ck-card-item_icon--${name} {`];
@@ -91,13 +91,13 @@ async function generateIconStyles() {
 
 async function main() {
   let generatedCss = await remapCss(await fetchCss(sources), mappings, remapOptions);
-  const prefix = `  /* begin remap-css rules */`;
-  const suffix = `  /* end remap-css rules */`;
+  const prefix = "  /* begin remap-css rules */";
+  const suffix = "  /* end remap-css rules */";
   generatedCss = `${prefix}\n${generatedCss}\n${suffix}`;
 
   let iconsCss = await generateIconStyles();
-  const iconsPrefix = `  /* begin icon-css rules */`;
-  const iconsSuffix = `  /* end icon-css rules */`;
+  const iconsPrefix = "  /* begin icon-css rules */";
+  const iconsSuffix = "  /* end icon-css rules */";
   iconsCss = `${iconsPrefix}\n${iconsCss}\n${iconsSuffix}`;
 
   const remapReg = /.*begin remap-css[\s\S]+end remap-css.*/;

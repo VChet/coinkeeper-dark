@@ -1,4 +1,4 @@
-name: stylelint
+name: lint
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   pull_request:
 
 jobs:
-  stylelint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,4 +17,4 @@ jobs:
         with:
           node-version: "18"
       - run: npm ci
-      - run: npm run lint
+      - run: npm run lint:all
