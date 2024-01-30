@@ -1,13 +1,25 @@
-const path = require("path");
-const { readdirSync, readFileSync, writeFileSync } = require("fs");
-const { execSync } = require("child_process");
+const { join } = require("node:path");
+const { readdir, readFile, writeFile } = require("node:fs/promises");
+const { execSync } = require("node:child_process");
 
-const files = readdirSync(__dirname).filter(filename => filename.endsWith(".user.css"));
-for (const filename of files) {
-  const filepath = path.join(__dirname, filename);
-  const contents = readFileSync(filepath, "utf8");
-  const updatedContents = contents.replace(/\b\d+\.\d+\.\d+\b/g, process.env.npm_package_version);
-  writeFileSync(filepath, updatedContents, "utf8");
+const src = join(__dirname, "..", "src");
+
+async function updateFiles() {
+  try {
+    const files = await readdir(src);
+    const cssFiles = files.filter(file => file.endsWith(".css"));
+    for (const filename of cssFiles) {
+      const filepath = join(src, filename);
+      const contents = await readFile(filepath, "utf8");
+      const updatedContents = contents.replace(/\b\d+\.\d+\.\d+\b/g, process.env.npm_package_version);
+      await writeFile(filepath, updatedContents, "utf8");
+    }
+
+    const filesString = cssFiles.map(file => join(src, file)).join(" ");
+    execSync(`git add ${filesString}`).toString();
+  } catch (error) {
+    console.error("Error:", error);
+  }
 }
 
-execSync(`git add ${files.join(" ")}`).toString();
+updateFiles();
