@@ -20,7 +20,7 @@
     "lint:css": "stylelint **/*.css",
     "lint:css:fix": "npm run lint:css -- --fix",
     "lint:all": "npm run lint:js && npm run lint:css",
-    "generate": "node src/generate.js"
+    "build": "node src/generate.js"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
