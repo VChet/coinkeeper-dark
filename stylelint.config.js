@@ -1,15 +1,15 @@
-{
-  "extends": "stylelint-config-standard",
-  "plugins": ["stylelint-prettier"],
-  "rules": {
+export default {
+  extends: "stylelint-config-standard",
+  plugins: ["stylelint-prettier"],
+  rules: {
     "prettier/prettier": [true, {
-      "trailingComma": "none",
-      "tabWidth": 2,
-      "semi": true,
-      "singleQuote": false,
-      "printWidth": 120,
-      "bracketSpacing": true,
-      "endOfLine": "auto"
+      trailingComma: "none",
+      tabWidth: 2,
+      semi: true,
+      singleQuote: false,
+      printWidth: 120,
+      bracketSpacing: true,
+      endOfLine: "auto"
     }],
     "at-rule-empty-line-before": "never",
     "comment-empty-line-before": "never",
@@ -20,4 +20,4 @@
     "selector-class-pattern": null,
     "selector-no-vendor-prefix": null
   }
-}
+};

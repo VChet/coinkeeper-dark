@@ -56,8 +56,8 @@ async function main() {
   const iconsReg = /.*begin icon-css[\s\S]+end icon-css.*/;
   let sourceCss = await readFile(SOURCE_FILE, "utf8");
   sourceCss = sourceCss.replace(remapReg, generatedCss).replace(iconsReg, iconsCss);
-  const { output } = await stylelint.lint({ code: sourceCss, fix: true });
-  return writeFile(SOURCE_FILE, output);
+  const { code } = await stylelint.lint({ code: sourceCss, fix: true });
+  return writeFile(SOURCE_FILE, code);
 }
 
 main().then(exit).catch(exit);
