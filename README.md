@@ -38,6 +38,6 @@ Anyone and everyone is welcome to [contribute](https://github.com/VChet/coinkeep
 1. Install all dependencies using `npm install`
 1. Change [mappings](./src/mappings.js)
 1. Generate style with `npm run build`
-1. Make additional changes in `coinkeeper-dark.user.css` if needed
+1. Make additional changes in [main style](./src/coinkeeper-dark.user.css) if needed
 1. Commit and push your changes
 1. Make a pull request
