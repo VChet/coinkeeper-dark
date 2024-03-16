@@ -22,10 +22,9 @@
 ## Installation
 
 1. Install Stylus/Cascadea (Safari)
-   - [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_16x16.png" /> Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-   - [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_16x16.png" /> Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-   - [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_16x16.png" /> Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
-   - [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_16x16.png" /> Safari](https://cascadea.app/)
+   - [![Chrome](https://github.com/alrra/browser-logos/raw/master/src/chrome/chrome_16x16.png) Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+   - [![Firefox](https://github.com/alrra/browser-logos/raw/master/src/firefox/firefox_16x16.png) Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+   - [![Safari](https://github.com/alrra/browser-logos/raw/master/src/safari/safari_16x16.png) Safari](https://cascadea.app/)
 1. [Install UserCSS](https://github.com/VChet/coinkeeper-dark/raw/master/src/coinkeeper-dark.user.css)
 
 ## Contribute
