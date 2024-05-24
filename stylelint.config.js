@@ -11,6 +11,7 @@ export default {
       bracketSpacing: true,
       endOfLine: "auto"
     }],
+    "at-rule-no-vendor-prefix": null,
     "at-rule-empty-line-before": "never",
     "comment-empty-line-before": "never",
     "rule-empty-line-before": "never",

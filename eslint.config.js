@@ -1,5 +1,4 @@
 import standard from "eslint-config-standard";
-import globals from "globals";
 import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat();
@@ -8,10 +7,7 @@ export default [
   {
     files: ["**/*.{js,cjs}"],
     languageOptions: {
-      parserOptions: { ecmaVersion: "latest" },
-      globals: {
-        ...globals.browser
-      }
+      parserOptions: { ecmaVersion: "latest" }
     }
   },
   ...compat.config(standard),

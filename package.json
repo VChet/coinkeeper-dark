@@ -23,13 +23,12 @@
     "build": "node src/generate.js"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "~8.57.0",
     "eslint-config-standard": "^17.1.0",
     "fetch-css": "^4.1.2",
-    "globals": "^14.0.0",
-    "remap-css": "^7.0.4",
-    "stylelint": "^16.2.1",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-prettier": "^5.0.0"
+    "remap-css": "^7.0.5",
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-prettier": "^5.0.2"
   }
 }
