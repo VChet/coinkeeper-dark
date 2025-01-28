@@ -14,6 +14,7 @@
     "url": "https://github.com/VChet/coinkeeper-dark/issues"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "version": "node src/bump.cjs",
     "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
