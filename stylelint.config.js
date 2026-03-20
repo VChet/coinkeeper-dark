@@ -1,16 +1,10 @@
 export default {
-  extends: "stylelint-config-standard",
-  plugins: ["stylelint-prettier"],
+  extends: [
+    "stylelint-config-standard",
+    "@stylistic/stylelint-config"
+  ],
   rules: {
-    "prettier/prettier": [true, {
-      trailingComma: "none",
-      tabWidth: 2,
-      semi: true,
-      singleQuote: false,
-      printWidth: 120,
-      bracketSpacing: true,
-      endOfLine: "auto"
-    }],
+    "@stylistic/selector-list-comma-newline-after": "always-multi-line",
     "at-rule-no-vendor-prefix": null,
     "at-rule-empty-line-before": "never",
     "comment-empty-line-before": "never",
