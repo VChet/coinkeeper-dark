@@ -1,25 +1,30 @@
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { readFile, writeFile, readdir } from "node:fs/promises";
+import process from "node:process";
 import fetchCss from "fetch-css";
 import remapCss from "remap-css";
 import stylelint from "stylelint";
-
-import mappings from "./mappings.js";
+import MAPPINGS from "./mappings.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const sources = [{ url: "https://coinkeeper.me/introduce-yourself" }];
-const ignoreSelectors = [/\spre$/, /^table$/];
+const SOURCES = [{ url: "https://coinkeeper.me/introduce-yourself" }];
 const SOURCE_FILE = join(__dirname, "coinkeeper-dark.user.css");
 const ICONS_DIR = join(__dirname, "icons");
 
-const remapOptions = {
-  ignoreSelectors,
+const REMAP_OPTIONS = {
+  ignoreSelectors: [/\spre$/, /^table$/],
   indentCss: 2,
   stylistic: true,
   validate: true
 };
+const PREFIX = "  /* begin remap-css rules */";
+const SUFFIX = "  /* end remap-css rules */";
+const REMAP_REGEX = /.*begin remap-css[\s\S]+end remap-css.*/;
+const ICONS_PREFIX = "  /* begin icon-css rules */";
+const ICONS_SUFFIX = "  /* end icon-css rules */";
+const ICONS_REMAP_REGEX = /.*begin icon-css[\s\S]+end icon-css.*/;
 
 function exit(error) {
   if (error) console.error(error);
@@ -42,20 +47,14 @@ async function generateIconStyles() {
 }
 
 async function main() {
-  let generatedCss = await remapCss(await fetchCss(sources), mappings, remapOptions);
-  const prefix = "  /* begin remap-css rules */";
-  const suffix = "  /* end remap-css rules */";
-  generatedCss = `${prefix}\n${generatedCss}\n${suffix}`;
+  let generatedCss = await remapCss(await fetchCss(SOURCES), MAPPINGS, REMAP_OPTIONS);
+  generatedCss = `${PREFIX}\n${generatedCss}\n${SUFFIX}`;
 
   let iconsCss = await generateIconStyles();
-  const iconsPrefix = "  /* begin icon-css rules */";
-  const iconsSuffix = "  /* end icon-css rules */";
-  iconsCss = `${iconsPrefix}\n${iconsCss}\n${iconsSuffix}`;
+  iconsCss = `${ICONS_PREFIX}\n${iconsCss}\n${ICONS_SUFFIX}`;
 
-  const remapReg = /.*begin remap-css[\s\S]+end remap-css.*/;
-  const iconsReg = /.*begin icon-css[\s\S]+end icon-css.*/;
   let sourceCss = await readFile(SOURCE_FILE, "utf8");
-  sourceCss = sourceCss.replace(remapReg, generatedCss).replace(iconsReg, iconsCss);
+  sourceCss = sourceCss.replace(REMAP_REGEX, generatedCss).replace(ICONS_REMAP_REGEX, iconsCss);
   const { code } = await stylelint.lint({ code: sourceCss, fix: true });
   return writeFile(SOURCE_FILE, code);
 }
