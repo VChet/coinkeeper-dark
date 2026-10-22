@@ -9,7 +9,7 @@ import MAPPINGS from "./mappings.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const SOURCES = [{ url: "https://coinkeeper.me/introduce-yourself" }];
+const SOURCES = [{ url: "https://coinkeeper.me/introduce-yourself", fetchOpts: { timeout: 60 * 1000 } }];
 const SOURCE_FILE = join(__dirname, "coinkeeper-dark.user.css");
 const ICONS_DIR = join(__dirname, "icons");
 
